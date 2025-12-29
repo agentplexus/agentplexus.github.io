@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* AgentPlexus Color Palette - from logo */
+  --color-plexus-dark: #0a0e1a;
+  --color-plexus-navy: #0f172a;
+  --color-plexus-slate: #1e293b;
+
+  --color-plexus-cyan: #06b6d4;
+  --color-plexus-cyan-light: #22d3ee;
+  --color-plexus-cyan-dark: #0891b2;
+
+  --color-plexus-purple: #8b5cf6;
+  --color-plexus-purple-light: #a78bfa;
+  --color-plexus-purple-dark: #7c3aed;
+
+  --color-plexus-pink: #ec4899;
+  --color-plexus-pink-light: #f472b6;
+  --color-plexus-pink-dark: #db2777;
+
+  --color-plexus-violet: #a855f7;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-plexus-dark);
+  color: #f1f5f9;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-plexus-cyan), var(--color-plexus-purple), var(--color-plexus-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove Tailwind Typography backticks from code elements */
+.prose code::before,
+.prose code::after {
+  content: none;
+}
+
+/* Accessibility: Focus styles for keyboard navigation */
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple focus-visible:ring-offset-2 focus-visible:ring-offset-plexus-dark;
+}
+
+/* Accessibility: Active page indicator for navigation */
+a[aria-current="page"] {
+  color: var(--color-plexus-cyan);
+  position: relative;
+}
+
+a[aria-current="page"]::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--color-plexus-cyan);
+  border-radius: 1px;
+}
+
+/* Accessibility: Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card-hover:hover {
+    transform: none;
+  }
+}

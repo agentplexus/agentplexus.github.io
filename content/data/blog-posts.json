@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "otel-semantic-conventions-agentic-ai",
+    "title": "OpenTelemetry Semantic Conventions for Agentic AI",
+    "excerpt": "Multi-agent AI systems need observability beyond what OpenTelemetry GenAI provides. We built semantic conventions for workflows, tasks, handoffs, and tool calls—extending gen_ai.agent.* to give multi-agent systems first-class observability.",
+    "date": "2024-12-28",
+    "readTime": "8 min",
+    "tags": ["OpenTelemetry", "Observability", "Multi-Agent", "OmniObserve"],
+    "author": "AgentPlexus Team"
+  },
+  {
+    "slug": "ai-assisted-sdk-development",
+    "title": "Building Production Go SDKs with Claude Opus 4.5",
+    "excerpt": "We built two complete Go SDKs in hours instead of weeks. The pattern: OpenAPI spec → ogen code generation → wrapper services. Here's what we learned about AI-assisted SDK development.",
+    "date": "2024-12-28",
+    "readTime": "8 min",
+    "tags": ["Claude Opus 4.5", "SDK Development", "Go", "Engineering"],
+    "author": "AgentPlexus Team"
+  },
+  {
+    "slug": "building-stats-agent-team",
+    "title": "Building a Multi-Agent Statistics Verification System",
+    "excerpt": "The journey of creating stats-agent-team: from hallucinated statistics to verified facts. Lessons learned building a 4-agent pipeline with OmniLLM, OmniSerp, and OmniObserve.",
+    "date": "2024-12-28",
+    "readTime": "10 min",
+    "tags": ["Multi-Agent", "OmniLLM", "OmniSerp", "Case Study"],
+    "author": "AgentPlexus Team"
+  }
+]

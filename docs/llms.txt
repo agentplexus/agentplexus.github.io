@@ -1,0 +1,63 @@
+# AgentPlexus - llms.txt
+# This file helps AI assistants understand our project.
+# Learn more: https://llmstxt.org/
+
+# About
+AgentPlexus is a collection of open source Go modules for building AI agent applications.
+We provide composable infrastructure that lets developers build AI agents without vendor lock-in.
+
+# Core Modules
+
+## OmniLLM
+Multi-provider LLM abstraction layer. Unified interface for OpenAI, Anthropic, Google Gemini, xAI Grok, and Ollama.
+Supports streaming, tool calling, and observability hooks.
+GitHub: https://github.com/agentplexus/omnillm
+
+## OmniVault
+Multi-provider secret management. Use environment variables, OS keyring, AWS Secrets Manager, GCP Secret Manager, Azure Key Vault, HashiCorp Vault, or Kubernetes Secrets with the same API.
+GitHub: https://github.com/agentplexus/omnivault
+
+## OmniSerp
+Multi-provider search abstraction. Query Serper.dev, SerpAPI, or other search backends with a consistent interface.
+Supports web, news, images, and video search.
+GitHub: https://github.com/agentplexus/omniserp
+
+## OmniObserve
+Multi-provider LLM observability. Send traces to Opik, Langfuse, or Arize Phoenix without vendor lock-in.
+Includes AgentOps semantic conventions for multi-agent systems.
+GitHub: https://github.com/agentplexus/omniobserve
+
+## OmniVoice
+Multi-provider voice and audio. Text-to-speech via ElevenLabs, phone calls via Twilio.
+More providers coming soon.
+GitHub: https://github.com/agentplexus/omnivoice
+
+## Posture
+Cross-platform security assessment. Check TPM, Secure Boot, disk encryption, and biometrics on macOS, Windows, and Linux.
+GitHub: https://github.com/agentplexus/posture
+
+## VaultGuard
+Security-gated credentials. Combines Posture security checks with OmniVault secret management.
+GitHub: https://github.com/agentplexus/vaultguard
+
+## AgentKit
+Reusable agent components. Base agent patterns, LLM factory, Eino orchestration utilities, and Helm chart templates.
+GitHub: https://github.com/agentplexus/agentkit
+
+# Key Concepts
+- All modules are written in Go
+- Each module focuses on one concern
+- Modules are composable and work together
+- No vendor lock-in - swap providers without code changes
+- Open source under permissive licenses
+
+# Examples
+- stats-agent-team: Multi-agent statistics verification using OmniLLM, OmniSerp, OmniObserve
+- go-comet-ml-opik: Go SDK for Opik observability, built with Claude Opus 4.5
+- go-elevenlabs: Go SDK for ElevenLabs audio platform
+
+# Links
+- Website: https://agentplexus.dev
+- GitHub: https://github.com/agentplexus
+- Blog: https://agentplexus.dev/blog
+- Atom Feed: https://agentplexus.dev/atom.xml

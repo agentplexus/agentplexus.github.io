@@ -1,0 +1,10 @@
+# robots.txt for AgentPlexus
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://agentplexus.dev/sitemap.xml
+
+# AI Crawlers - see llms.txt for guidance
+# https://agentplexus.dev/llms.txt
