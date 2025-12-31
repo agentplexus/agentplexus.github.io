@@ -118,7 +118,7 @@ const products = [
     color: 'pink' as const,
     status: 'stable' as const,
     githubUrl: 'https://github.com/agentplexus/agentkit',
-    integrations: ['agentcore', 'kubernetes', 'helm', 'docker'],
+    integrations: ['agentcore', 'kubernetes', 'helm', 'docker', 'aws-cdk', 'pulumi'],
   },
   {
     name: 'OmniVoice',

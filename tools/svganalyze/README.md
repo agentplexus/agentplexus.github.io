@@ -1,5 +1,16 @@
 # SVG Icon Process
 
+> **DEPRECATED**: This tool has been superseded by [`tools/svg`](../svg/README.md).
+> Use `svg analyze` instead of `svganalyze`.
+>
+> ```bash
+> cd tools/svg && make build
+> ./svg analyze icon.svg
+> ./svg analyze --fix icon.svg
+> ```
+
+---
+
 This document describes the process for adding and validating SVG icons for the AgentPlexus website.
 
 ## Overview

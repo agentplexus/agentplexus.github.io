@@ -150,6 +150,18 @@ const categories: Category[] = [
         description: 'Kubernetes package manager',
         url: 'https://helm.sh',
       },
+      {
+        name: 'AWS CDK',
+        logo: '/integrations/aws-cdk.svg',
+        description: 'Infrastructure as code for AWS deployments',
+        url: 'https://aws.amazon.com/cdk/',
+      },
+      {
+        name: 'Pulumi',
+        logo: '/integrations/pulumi.svg',
+        description: 'Infrastructure as code for AWS deployments',
+        url: 'https://pulumi.com',
+      },
     ],
   },
   {

@@ -27,12 +27,14 @@ dist-ssr
 *.sw?
 
 # Internal documentation (not for public repo)
-internal/
+/internal/
 
 # Go built binaries
 tools/atomfeed/atomfeed
 tools/svganalyze/svganalyze
 tools/svgverify/svgverify
+tools/svg/svg
+tools/svg/svg-*
 
 # OS files
 Thumbs.db

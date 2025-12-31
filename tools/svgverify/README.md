@@ -1,5 +1,16 @@
 # svgverify
 
+> **DEPRECATED**: This tool has been superseded by [`tools/svg`](../svg/README.md).
+> Use `svg verify` instead of `svgverify`.
+>
+> ```bash
+> cd tools/svg && make build
+> ./svg verify icon.svg
+> ./svg verify ./icons/
+> ```
+
+---
+
 A tool to validate SVG files are pure vector images without embedded binary data.
 
 ## Purpose
