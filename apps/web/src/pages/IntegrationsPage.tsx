@@ -25,19 +25,19 @@ const categories: Category[] = [
       {
         name: 'OpenAI',
         logo: '/integrations/openai.svg',
-        description: 'GPT-4, GPT-4o, and other OpenAI models',
+        description: 'GPT and other OpenAI models',
         url: 'https://openai.com',
       },
       {
         name: 'Anthropic',
         logo: '/integrations/anthropic.svg',
-        description: 'Claude 3.5 Sonnet, Claude 3 Opus, and Haiku',
+        description: 'Claude Opus, Sonnet, and Haiku models',
         url: 'https://anthropic.com',
       },
       {
         name: 'Google Gemini',
         logo: '/integrations/gemini.svg',
-        description: 'Gemini Pro, Gemini Flash, and other Google models',
+        description: 'Gemini models from Google',
         url: 'https://deepmind.google/technologies/gemini/',
       },
       {
@@ -61,15 +61,15 @@ const categories: Category[] = [
     moduleUrl: 'https://github.com/agentplexus/omniobserve',
     integrations: [
       {
-        name: 'Comet Opik',
+        name: 'Opik',
         logo: '/integrations/opik.svg',
-        description: 'Open-source LLM evaluation and tracing',
+        description: 'Open-source LLM evaluation and tracing from Comet',
         url: 'https://comet.com/site/products/opik/',
       },
       {
-        name: 'Arize Phoenix',
+        name: 'Phoenix',
         logo: '/integrations/phoenix.svg',
-        description: 'Open-source observability for LLM applications',
+        description: 'Open-source observability for LLM applications from Arize',
         url: 'https://phoenix.arize.com',
       },
       {

@@ -97,13 +97,13 @@ const products: Product[] = [
     slug: 'omniobserve',
     tagline: 'Multi-Provider LLM Observability',
     description:
-      'Unified observability for LLM applications. Send traces to Opik, Langfuse, or Phoenix without vendor lock-in.',
+      'Unified observability for LLM applications. Send traces to Opik (Comet), Langfuse, or Phoenix (Arize) without vendor lock-in.',
     color: 'violet',
     githubUrl: 'https://github.com/agentplexus/omniobserve',
     presentationUrl: 'https://agentplexus.github.io/omniobserve/',
     features: [
       'Zero-config integration with OmniLLM via hooks',
-      'Support for Opik, Langfuse, and Arize Phoenix',
+      'Support for Opik (Comet), Langfuse, and Phoenix (Arize)',
       'Automatic trace and span creation',
       'Token usage and cost tracking',
       'Latency metrics and error recording',

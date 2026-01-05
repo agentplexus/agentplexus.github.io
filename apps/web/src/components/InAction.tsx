@@ -15,8 +15,8 @@ const projects = [
     modules: ['OmniObserve'],
   },
   {
-    name: 'go-comet-ml-opik',
-    slug: 'go-comet-ml-opik',
+    name: 'go-opik',
+    slug: 'go-opik',
     tagline: 'Go SDK for LLM observability - built in 4-5 hours',
     modules: ['OmniObserve'],
   },

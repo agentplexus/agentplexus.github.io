@@ -23,7 +23,7 @@ Supports web, news, images, and video search.
 GitHub: https://github.com/agentplexus/omniserp
 
 ## OmniObserve
-Multi-provider LLM observability. Send traces to Opik, Langfuse, or Arize Phoenix without vendor lock-in.
+Multi-provider LLM observability. Send traces to Opik (Comet), Langfuse, or Phoenix (Arize) without vendor lock-in.
 Includes AgentOps semantic conventions for multi-agent systems.
 GitHub: https://github.com/agentplexus/omniobserve
 
@@ -53,7 +53,7 @@ GitHub: https://github.com/agentplexus/agentkit
 
 # Examples
 - stats-agent-team: Multi-agent statistics verification using OmniLLM, OmniSerp, OmniObserve
-- go-comet-ml-opik: Go SDK for Opik observability, built with Claude Opus 4.5
+- go-opik: Go SDK for Opik observability, built with Claude Opus 4.5
 - go-elevenlabs: Go SDK for ElevenLabs audio platform
 
 # Links

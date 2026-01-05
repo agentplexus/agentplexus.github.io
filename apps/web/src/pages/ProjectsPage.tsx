@@ -34,8 +34,8 @@ const projects = [
     presentationUrl: 'https://agentplexus.github.io/omniobserve/semconvagent.html',
   },
   {
-    name: 'go-comet-ml-opik',
-    slug: 'go-comet-ml-opik',
+    name: 'go-opik',
+    slug: 'go-opik',
     description:
       'A complete Go SDK for Comet ML Opik, built in 4-5 hours using Claude Opus 4.5. Demonstrates AI-assisted SDK development from OpenAPI spec to production-ready library.',
     modules: ['OmniObserve'],
@@ -45,9 +45,9 @@ const projects = [
       { icon: Eye, text: 'LLM observability SDK' },
       { icon: Bot, text: 'Built with Claude Opus 4.5' },
     ],
-    githubUrl: 'https://github.com/agentplexus/go-comet-ml-opik',
-    docsUrl: 'https://agentplexus.github.io/go-comet-ml-opik/',
-    presentationUrl: 'https://agentplexus.github.io/go-comet-ml-opik/presentation.html',
+    githubUrl: 'https://github.com/agentplexus/go-opik',
+    docsUrl: 'https://agentplexus.github.io/go-opik/',
+    presentationUrl: 'https://agentplexus.github.io/go-opik/presentation.html',
   },
   {
     name: 'go-elevenlabs',

@@ -1,12 +1,12 @@
 # Building Production Go SDKs with Claude Opus 4.5
 
-We built two complete Go SDKs—go-comet-ml-opik and go-elevenlabs—using Claude Opus 4.5 with Claude Code. The first took 4-5 hours. The second followed the same pattern. Here's what we learned about AI-assisted SDK development.
+We built two complete Go SDKs—go-opik and go-elevenlabs—using Claude Opus 4.5 with Claude Code. The first took 4-5 hours. The second followed the same pattern. Here's what we learned about AI-assisted SDK development.
 
 ## The Challenge
 
 Both projects started with the same problem: a service with a comprehensive API but no Go SDK.
 
-**go-comet-ml-opik**: Opik is Comet ML's open-source LLM observability platform. Great Python SDK, no Go support. We needed it for OmniObserve.
+**go-opik**: Opik is Comet ML's open-source LLM observability platform. Great Python SDK, no Go support. We needed it for OmniObserve.
 
 **go-elevenlabs**: ElevenLabs provides AI audio generation—text-to-speech, voice cloning, music. Powerful API with 204 operations. No official Go SDK.
 
@@ -18,7 +18,7 @@ Both SDKs followed the same architecture:
 
 ### Step 1: Analyze the OpenAPI Spec
 
-Every modern API has an OpenAPI specification. go-comet-ml-opik's was 15K lines with 201 operations. go-elevenlabs was 54K lines with 204 operations.
+Every modern API has an OpenAPI specification. go-opik's was 15K lines with 201 operations. go-elevenlabs was 54K lines with 204 operations.
 
 Claude Opus 4.5 excels at reading and understanding large specs. We'd ask it to categorize endpoints, identify patterns, and understand the data model. This analysis that might take a human developer a day or two happens in minutes.
 
@@ -65,7 +65,7 @@ Claude wrote tests alongside implementation, catching issues immediately rather 
 
 ## The Numbers
 
-### go-comet-ml-opik
+### go-opik
 
 | Metric | Value |
 |--------|-------|
@@ -144,7 +144,7 @@ The same pattern should work for any API with an OpenAPI specification.
 
 Both SDKs are now dependencies for AgentPlexus modules:
 
-- **go-comet-ml-opik** powers OmniObserve's Opik integration
+- **go-opik** powers OmniObserve's Opik integration
 - **go-elevenlabs** will power OmniVoice's ElevenLabs integration
 
 The SDKs are open source and accepting contributions. The pattern we've described can be applied to other APIs that need Go support.

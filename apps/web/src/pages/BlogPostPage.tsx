@@ -55,14 +55,14 @@ const postMeta: Record<string, PostMeta> = {
     ],
   },
   'ai-assisted-sdk-development': {
-    githubUrl: 'https://github.com/agentplexus/go-comet-ml-opik',
-    projectUrl: '/projects/go-comet-ml-opik',
+    githubUrl: 'https://github.com/agentplexus/go-opik',
+    projectUrl: '/projects/go-opik',
     relatedProjects: [
       {
-        slug: 'go-comet-ml-opik',
-        name: 'go-comet-ml-opik',
+        slug: 'go-opik',
+        name: 'go-opik',
         tagline: 'Go SDK for LLM Observability - Built in 4-5 Hours',
-        presentationUrl: 'https://agentplexus.github.io/go-comet-ml-opik/presentation.html',
+        presentationUrl: 'https://agentplexus.github.io/go-opik/presentation.html',
       },
       {
         slug: 'go-elevenlabs',

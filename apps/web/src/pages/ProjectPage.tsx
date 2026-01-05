@@ -82,9 +82,9 @@ const projects: Record<string, Project> = {
       'Partial results handling with retry logic',
     ],
   },
-  'go-comet-ml-opik': {
-    name: 'go-comet-ml-opik',
-    slug: 'go-comet-ml-opik',
+  'go-opik': {
+    name: 'go-opik',
+    slug: 'go-opik',
     tagline: 'Go SDK for LLM Observability - Built in 4-5 Hours',
     description:
       'A complete Go SDK for Comet ML Opik, an open-source LLM observability platform. Built entirely using Claude Opus 4.5 in just 4-5 hours, demonstrating AI-assisted SDK development from OpenAPI spec to production-ready library.',
@@ -92,14 +92,14 @@ const projects: Record<string, Project> = {
       'Opik only had a Python SDK. Go developers building LLM applications needed observability but had no native library. Building an SDK manually would take 5-8 weeks.',
     solution:
       'Used Claude Opus 4.5 with Claude Code to analyze the Python SDK and OpenAPI spec, then generate a complete Go SDK with ogen for type-safe API clients, wrapper services for clean interfaces, and comprehensive tests.',
-    githubUrl: 'https://github.com/agentplexus/go-comet-ml-opik',
-    docsUrl: 'https://agentplexus.github.io/go-comet-ml-opik/',
-    presentationUrl: 'https://agentplexus.github.io/go-comet-ml-opik/presentation.html',
+    githubUrl: 'https://github.com/agentplexus/go-opik',
+    docsUrl: 'https://agentplexus.github.io/go-opik/',
+    presentationUrl: 'https://agentplexus.github.io/go-opik/presentation.html',
     modules: [
       {
         name: 'OmniObserve',
         slug: 'omniobserve',
-        usage: 'This SDK is the foundation for OmniObserve\'s Opik integration. OmniObserve uses go-comet-ml-opik to send traces to Opik.',
+        usage: 'This SDK is the foundation for OmniObserve\'s Opik integration. OmniObserve uses go-opik to send traces to Opik.',
       },
     ],
     architecture: [
@@ -134,7 +134,7 @@ const projects: Record<string, Project> = {
     slug: 'go-elevenlabs',
     tagline: 'Go SDK for AI Audio Generation',
     description:
-      'A comprehensive Go SDK for ElevenLabs AI audio platform, covering text-to-speech, speech-to-text, voice design, music generation, and real-time WebSocket streaming. Built using the same AI-assisted approach as go-comet-ml-opik.',
+      'A comprehensive Go SDK for ElevenLabs AI audio platform, covering text-to-speech, speech-to-text, voice design, music generation, and real-time WebSocket streaming. Built using the same AI-assisted approach as go-opik.',
     problem:
       'ElevenLabs has a powerful API with 204 operations, but no official Go SDK. The 54K line OpenAPI spec would take weeks to wrap manually.',
     solution:
