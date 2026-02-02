@@ -1,5 +1,3 @@
-# Introducing the Releases Page: Tracking Progress Across AgentPlexus
-
 We're building a lot at AgentPlexus. Multiple SDKs, MCP servers, infrastructure tools, and integrations—all moving forward simultaneously. Keeping track of what shipped and when was becoming a challenge. Today we're launching a dedicated [Releases page](/releases) that aggregates GitHub releases across all our repositories into a single, filterable view.
 
 ## The Problem: Release Visibility
