@@ -13,6 +13,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'introducing-releases-page',
+    title: 'Introducing the Releases Page: Tracking Progress Across AgentPlexus',
+    excerpt:
+      'We built ReleaseLog to aggregate GitHub releases across all our repositories into a single, filterable view with a GitHub-style heatmap. Now live at agentplexus.dev/releases.',
+    date: '2026-02-02',
+    readTime: '5 min',
+    tags: ['Releases', 'Open Source', 'Engineering'],
+    author: 'AgentPlexus Team',
+  },
+  {
     slug: 'mcp-confluence-table-corruption',
     title: 'Why We Built Another Confluence MCP Server',
     excerpt:
