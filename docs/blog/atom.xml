@@ -1,13 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>AgentPlexus Blog</title>
-  <link href="https://agentplexus.github.io/atom.xml" rel="self" type="application/atom+xml"></link>
+  <link href="https://agentplexus.github.io/blog/atom.xml" rel="self" type="application/atom+xml"></link>
   <link href="https://agentplexus.github.io/blog" rel="alternate" type="text/html"></link>
-  <updated>2024-12-28T00:00:00Z</updated>
+  <updated>2026-02-02T00:00:00Z</updated>
   <id>https://agentplexus.github.io/blog</id>
   <author>
     <name>AgentPlexus Team</name>
   </author>
+  <entry>
+    <title>Introducing the Releases Page: Tracking Progress Across AgentPlexus</title>
+    <link href="https://agentplexus.github.io/blog/introducing-releases-page" rel="alternate" type="text/html"></link>
+    <id>https://agentplexus.github.io/blog/introducing-releases-page</id>
+    <updated>2026-02-02T00:00:00Z</updated>
+    <published>2026-02-02T00:00:00Z</published>
+    <summary type="text">We built ReleaseLog to aggregate GitHub releases across all our repositories into a single, filterable view with a GitHub-style heatmap. Now live at agentplexus.dev/releases.</summary>
+    <author>
+      <name>AgentPlexus Team</name>
+    </author>
+    <category term="Releases"></category>
+    <category term="Open Source"></category>
+    <category term="Engineering"></category>
+  </entry>
+  <entry>
+    <title>Why We Built Another Confluence MCP Server</title>
+    <link href="https://agentplexus.github.io/blog/mcp-confluence-table-corruption" rel="alternate" type="text/html"></link>
+    <id>https://agentplexus.github.io/blog/mcp-confluence-table-corruption</id>
+    <updated>2024-12-29T00:00:00Z</updated>
+    <published>2024-12-29T00:00:00Z</published>
+    <summary type="text">Existing Confluence MCP servers corrupt tables. The root cause: LLMs generate Markdown or HTML5, but Confluence uses Storage Format XHTML. We built a server that handles both structured creation and lossless editing.</summary>
+    <author>
+      <name>AgentPlexus Team</name>
+    </author>
+    <category term="MCP"></category>
+    <category term="Confluence"></category>
+    <category term="Engineering"></category>
+  </entry>
+  <entry>
+    <title>Security-Gated MCP Servers with VaultGuard</title>
+    <link href="https://agentplexus.github.io/blog/security-gated-mcp-servers" rel="alternate" type="text/html"></link>
+    <id>https://agentplexus.github.io/blog/security-gated-mcp-servers</id>
+    <updated>2024-12-29T00:00:00Z</updated>
+    <published>2024-12-29T00:00:00Z</published>
+    <summary type="text">MCP servers need API keys. Environment variables in config files are convenient but insecure. We built a pattern using VaultGuard that gates credential access on device security posture.</summary>
+    <author>
+      <name>AgentPlexus Team</name>
+    </author>
+    <category term="MCP"></category>
+    <category term="Security"></category>
+    <category term="VaultGuard"></category>
+    <category term="OmniVault"></category>
+  </entry>
+  <entry>
+    <title>A Severity Rubric for WCAG 2.2 AA Prioritization</title>
+    <link href="https://agentplexus.github.io/blog/wcag-accessibility-with-ai" rel="alternate" type="text/html"></link>
+    <id>https://agentplexus.github.io/blog/wcag-accessibility-with-ai</id>
+    <updated>2024-12-29T00:00:00Z</updated>
+    <published>2024-12-29T00:00:00Z</published>
+    <summary type="text">WCAG defines conformance levels, not severity. When you find 14 accessibility issues, which do you fix first? We built a severity rubric based on user impact and share our initial implementation pass.</summary>
+    <author>
+      <name>AgentPlexus Team</name>
+    </author>
+    <category term="Accessibility"></category>
+    <category term="WCAG"></category>
+    <category term="Engineering"></category>
+  </entry>
   <entry>
     <title>OpenTelemetry Semantic Conventions for Agentic AI</title>
     <link href="https://agentplexus.github.io/blog/otel-semantic-conventions-agentic-ai" rel="alternate" type="text/html"></link>

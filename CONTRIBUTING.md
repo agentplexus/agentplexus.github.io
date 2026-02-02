@@ -103,9 +103,33 @@ The releases page displays data from `/releases/releases.json`.
    }
    ```
 
-4. **Update Atom feed** at `apps/web/public/blog/atom.xml` (manual for now)
+4. **Add entry to blog-posts.json** at `content/data/blog-posts.json`:
 
-5. **Rebuild and deploy** (see Deployment section)
+   Add the new post at the TOP of the array (newest first):
+
+   ```json
+   {
+     "slug": "my-new-post",
+     "title": "My New Post Title",
+     "excerpt": "A brief description...",
+     "date": "2026-02-02",
+     "readTime": "5 min",
+     "tags": ["Tag1", "Tag2"],
+     "author": "AgentPlexus Team"
+   }
+   ```
+
+   **Note**: This file must stay in sync with `BlogPage.tsx`.
+
+5. **Regenerate Atom feed** using the atomfeed tool:
+
+   ```bash
+   ./tools/atomfeed/atomfeed
+   ```
+
+   This reads from `content/data/blog-posts.json` and generates `apps/web/public/blog/atom.xml`.
+
+6. **Rebuild and deploy** (see Deployment section)
 
 ### Add an Integration
 

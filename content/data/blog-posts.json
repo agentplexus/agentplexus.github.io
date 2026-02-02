@@ -1,5 +1,41 @@
 [
   {
+    "slug": "introducing-releases-page",
+    "title": "Introducing the Releases Page: Tracking Progress Across AgentPlexus",
+    "excerpt": "We built ReleaseLog to aggregate GitHub releases across all our repositories into a single, filterable view with a GitHub-style heatmap. Now live at agentplexus.dev/releases.",
+    "date": "2026-02-02",
+    "readTime": "5 min",
+    "tags": ["Releases", "Open Source", "Engineering"],
+    "author": "AgentPlexus Team"
+  },
+  {
+    "slug": "mcp-confluence-table-corruption",
+    "title": "Why We Built Another Confluence MCP Server",
+    "excerpt": "Existing Confluence MCP servers corrupt tables. The root cause: LLMs generate Markdown or HTML5, but Confluence uses Storage Format XHTML. We built a server that handles both structured creation and lossless editing.",
+    "date": "2024-12-29",
+    "readTime": "6 min",
+    "tags": ["MCP", "Confluence", "Engineering"],
+    "author": "AgentPlexus Team"
+  },
+  {
+    "slug": "security-gated-mcp-servers",
+    "title": "Security-Gated MCP Servers with VaultGuard",
+    "excerpt": "MCP servers need API keys. Environment variables in config files are convenient but insecure. We built a pattern using VaultGuard that gates credential access on device security posture.",
+    "date": "2024-12-29",
+    "readTime": "8 min",
+    "tags": ["MCP", "Security", "VaultGuard", "OmniVault"],
+    "author": "AgentPlexus Team"
+  },
+  {
+    "slug": "wcag-accessibility-with-ai",
+    "title": "A Severity Rubric for WCAG 2.2 AA Prioritization",
+    "excerpt": "WCAG defines conformance levels, not severity. When you find 14 accessibility issues, which do you fix first? We built a severity rubric based on user impact and share our initial implementation pass.",
+    "date": "2024-12-29",
+    "readTime": "12 min",
+    "tags": ["Accessibility", "WCAG", "Engineering"],
+    "author": "AgentPlexus Team"
+  },
+  {
     "slug": "otel-semantic-conventions-agentic-ai",
     "title": "OpenTelemetry Semantic Conventions for Agentic AI",
     "excerpt": "Multi-agent AI systems need observability beyond what OpenTelemetry GenAI provides. We built semantic conventions for workflows, tasks, handoffs, and tool calls—extending gen_ai.agent.* to give multi-agent systems first-class observability.",
