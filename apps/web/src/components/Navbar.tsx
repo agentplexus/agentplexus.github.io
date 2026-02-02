@@ -1,24 +1,41 @@
-import { Menu, X, Github, Rss } from 'lucide-react'
+import { Menu, X, Github, Rss, ChevronDown } from 'lucide-react'
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [resourcesOpen, setResourcesOpen] = useState(false)
   const location = useLocation()
   const firstMenuItemRef = useRef<HTMLAnchorElement>(null)
   const menuButtonRef = useRef<HTMLButtonElement>(null)
+  const resourcesRef = useRef<HTMLDivElement>(null)
 
   // Close mobile menu on Escape key and manage focus
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        setIsOpen(false)
-        menuButtonRef.current?.focus()
+      if (e.key === 'Escape') {
+        if (resourcesOpen) {
+          setResourcesOpen(false)
+        } else if (isOpen) {
+          setIsOpen(false)
+          menuButtonRef.current?.focus()
+        }
       }
     }
     document.addEventListener('keydown', handleEscape)
     return () => document.removeEventListener('keydown', handleEscape)
-  }, [isOpen])
+  }, [isOpen, resourcesOpen])
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (resourcesRef.current && !resourcesRef.current.contains(e.target as Node)) {
+        setResourcesOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   // Focus first menu item when menu opens
   useEffect(() => {
@@ -32,6 +49,9 @@ export function Navbar() {
     if (href.startsWith('/#')) return location.pathname === '/' && location.hash === href.slice(1)
     return location.pathname === href
   }
+
+  // Check if any resource page is current
+  const isResourcePage = isCurrentPage('/blog') || isCurrentPage('/releases') || isCurrentPage('/#philosophy')
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-plexus-dark/80 backdrop-blur-md border-b border-white/10" aria-label="Main navigation">
@@ -66,21 +86,59 @@ export function Navbar() {
             <a href="/mcp" className="text-gray-300 hover:text-plexus-cyan transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple" aria-current={isCurrentPage('/mcp') ? 'page' : undefined}>
               MCP
             </a>
-            <a href="/#philosophy" className="text-gray-300 hover:text-plexus-cyan transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple" aria-current={isCurrentPage('/#philosophy') ? 'page' : undefined}>
-              Philosophy
-            </a>
-            <a href="/blog" className="text-gray-300 hover:text-plexus-cyan transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple" aria-current={isCurrentPage('/blog') ? 'page' : undefined}>
-              Blog
-            </a>
-            <a
-              href="/blog/atom.xml"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-gray-400 hover:text-plexus-cyan transition-colors rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple"
-              aria-label="RSS Feed"
-            >
-              <Rss size={18} />
-            </a>
+
+            {/* Resources dropdown */}
+            <div className="relative" ref={resourcesRef}>
+              <button
+                onClick={() => setResourcesOpen(!resourcesOpen)}
+                className={`inline-flex items-center gap-1 transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple ${isResourcePage ? 'text-plexus-cyan' : 'text-gray-300 hover:text-plexus-cyan'}`}
+                aria-expanded={resourcesOpen}
+                aria-haspopup="true"
+              >
+                Resources
+                <ChevronDown size={16} className={`transition-transform ${resourcesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {resourcesOpen && (
+                <div className="absolute top-full right-0 mt-2 w-48 py-2 bg-plexus-dark/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl">
+                  <a
+                    href="/blog"
+                    className="block px-4 py-2 text-gray-300 hover:text-plexus-cyan hover:bg-white/5 transition-colors"
+                    onClick={() => setResourcesOpen(false)}
+                    aria-current={isCurrentPage('/blog') ? 'page' : undefined}
+                  >
+                    Blog
+                  </a>
+                  <a
+                    href="/releases"
+                    className="block px-4 py-2 text-gray-300 hover:text-plexus-cyan hover:bg-white/5 transition-colors"
+                    onClick={() => setResourcesOpen(false)}
+                    aria-current={isCurrentPage('/releases') ? 'page' : undefined}
+                  >
+                    Releases
+                  </a>
+                  <a
+                    href="/#philosophy"
+                    className="block px-4 py-2 text-gray-300 hover:text-plexus-cyan hover:bg-white/5 transition-colors"
+                    onClick={() => setResourcesOpen(false)}
+                    aria-current={isCurrentPage('/#philosophy') ? 'page' : undefined}
+                  >
+                    Philosophy
+                  </a>
+                  <div className="border-t border-white/10 my-2"></div>
+                  <a
+                    href="/blog/atom.xml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-300 hover:text-plexus-cyan hover:bg-white/5 transition-colors"
+                    onClick={() => setResourcesOpen(false)}
+                  >
+                    <Rss size={14} />
+                    RSS Feed
+                  </a>
+                </div>
+              )}
+            </div>
+
             <a
               href="https://github.com/agentplexus"
               target="_blank"
@@ -147,14 +205,11 @@ export function Navbar() {
               >
                 MCP
               </a>
-              <a
-                href="/#philosophy"
-                className="text-gray-300 hover:text-plexus-cyan transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple"
-                onClick={() => setIsOpen(false)}
-                aria-current={isCurrentPage('/#philosophy') ? 'page' : undefined}
-              >
-                Philosophy
-              </a>
+
+              {/* Resources section in mobile */}
+              <div className="pt-2 border-t border-white/10">
+                <span className="text-xs uppercase tracking-wider text-gray-500">Resources</span>
+              </div>
               <a
                 href="/blog"
                 className="text-gray-300 hover:text-plexus-cyan transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple"
@@ -162,6 +217,22 @@ export function Navbar() {
                 aria-current={isCurrentPage('/blog') ? 'page' : undefined}
               >
                 Blog
+              </a>
+              <a
+                href="/releases"
+                className="text-gray-300 hover:text-plexus-cyan transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple"
+                onClick={() => setIsOpen(false)}
+                aria-current={isCurrentPage('/releases') ? 'page' : undefined}
+              >
+                Releases
+              </a>
+              <a
+                href="/#philosophy"
+                className="text-gray-300 hover:text-plexus-cyan transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple"
+                onClick={() => setIsOpen(false)}
+                aria-current={isCurrentPage('/#philosophy') ? 'page' : undefined}
+              >
+                Philosophy
               </a>
               <a
                 href="/blog/atom.xml"
