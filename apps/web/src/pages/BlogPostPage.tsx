@@ -97,7 +97,7 @@ const postMeta: Record<string, PostMeta> = {
 
 export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>()
-  const { content, loading, error } = useMarkdownContent(slug ? `/blog/${slug}.md` : undefined)
+  const { content, loading, error } = useMarkdownContent(slug ? `/content/blog/${slug}.md` : undefined)
 
   const meta = blogPosts.find((p) => p.slug === slug)
   const extra = slug ? postMeta[slug] : undefined
