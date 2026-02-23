@@ -14,6 +14,7 @@ const integrations = [
   { name: 'Helm', logo: '/integrations/helm.svg' },
   { name: 'Twilio', logo: '/integrations/twilio.svg' },
   { name: 'ElevenLabs', logo: '/integrations/elevenlabs.svg' },
+  { name: 'Deepgram', logo: '/integrations/deepgram.svg' },
   { name: 'Serper', logo: '/integrations/serper.svg' },
   { name: 'SerpApi', logo: '/integrations/serpapi.svg' },
 ]

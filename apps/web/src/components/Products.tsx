@@ -125,17 +125,17 @@ const products = [
     slug: 'omnivoice',
     tagline: 'Multi-Provider Voice & Audio',
     description:
-      'Unified API for speech-to-text and text-to-speech. Currently supports ElevenLabs and Twilio, with more providers coming soon.',
+      'Unified API for speech-to-text and text-to-speech. Supports Deepgram, ElevenLabs, and Twilio.',
     features: [
+      'Deepgram STT integration',
       'ElevenLabs TTS integration',
       'Twilio voice & phone support',
       'Streaming audio processing',
-      'More providers coming soon',
     ],
     color: 'violet' as const,
     status: 'beta' as const,
     githubUrl: 'https://github.com/agentplexus/omnivoice',
-    integrations: ['elevenlabs', 'twilio'],
+    integrations: ['deepgram', 'elevenlabs', 'twilio'],
   },
   {
     name: 'AssistantKit',

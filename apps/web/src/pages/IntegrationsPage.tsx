@@ -107,6 +107,12 @@ const categories: Category[] = [
     moduleUrl: 'https://github.com/agentplexus/omnivoice',
     integrations: [
       {
+        name: 'Deepgram',
+        logo: '/integrations/deepgram.svg',
+        description: 'AI speech-to-text and audio intelligence',
+        url: 'https://deepgram.com',
+      },
+      {
         name: 'Twilio',
         logo: '/integrations/twilio.svg',
         description: 'Voice, SMS, and communication APIs',
