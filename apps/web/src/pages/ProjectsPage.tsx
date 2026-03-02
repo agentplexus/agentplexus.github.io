@@ -14,9 +14,9 @@ const projects = [
       { icon: Eye, text: 'Tracing via OmniObserve' },
       { icon: Workflow, text: 'Eino orchestration' },
     ],
-    githubUrl: 'https://github.com/plexusone/stats-agent-team',
-    docsUrl: 'https://agentplexus.dev/stats-agent-team/',
-    presentationUrl: 'https://agentplexus.dev/stats-agent-team/presentation.html',
+    githubUrl: 'https://github.com/plexusone/agent-team-stats',
+    docsUrl: 'https://plexusone.github.io/agent-team-stats/',
+    presentationUrl: 'https://plexusone.github.io/agent-team-stats/presentation.html',
   },
   {
     name: 'OmniObserve AgentOps',
@@ -31,7 +31,7 @@ const projects = [
       { icon: Code, text: 'Middleware instrumentation' },
     ],
     githubUrl: 'https://github.com/plexusone/omniobserve/tree/main/semconv/agent',
-    presentationUrl: 'https://agentplexus.dev/omniobserve/semconvagent.html',
+    presentationUrl: 'https://plexusone.github.io/omniobserve/semconvagent.html',
   },
   {
     name: 'go-opik',
@@ -45,9 +45,9 @@ const projects = [
       { icon: Eye, text: 'LLM observability SDK' },
       { icon: Bot, text: 'Built with Claude Opus 4.5' },
     ],
-    githubUrl: 'https://github.com/plexusone/go-opik',
-    docsUrl: 'https://agentplexus.dev/go-opik/',
-    presentationUrl: 'https://agentplexus.dev/go-opik/presentation.html',
+    githubUrl: 'https://github.com/plexusone/opik-go',
+    docsUrl: 'https://plexusone.github.io/opik-go/',
+    presentationUrl: 'https://plexusone.github.io/opik-go/presentation.html',
   },
   {
     name: 'go-elevenlabs',
@@ -61,9 +61,9 @@ const projects = [
       { icon: FileCode, text: 'OpenAPI → ogen → wrappers' },
       { icon: Bot, text: 'Built with Claude Opus 4.5' },
     ],
-    githubUrl: 'https://github.com/plexusone/go-elevenlabs',
-    docsUrl: 'https://agentplexus.dev/go-elevenlabs/',
-    presentationUrl: 'https://agentplexus.dev/go-elevenlabs/presentation.html',
+    githubUrl: 'https://github.com/plexusone/elevenlabs-go',
+    docsUrl: 'https://plexusone.github.io/elevenlabs-go/',
+    presentationUrl: 'https://plexusone.github.io/elevenlabs-go/presentation.html',
   },
 ]
 

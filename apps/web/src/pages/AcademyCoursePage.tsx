@@ -33,7 +33,7 @@ const courses: Record<string, Course> = {
       'Learn to define custom subagents using the multi-agent-spec format, generate platform-specific plugins with assistantkit, and load them into Claude Code and Kiro CLI. This course covers the complete workflow from specification to deployment.',
     duration: '45 min',
     level: 'Intermediate',
-    presentationUrl: 'https://agentplexus.dev/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
     githubUrl: 'https://github.com/plexusone/agentplexus-academy/tree/main/agents-claude-code-kiro-cli',
     prerequisites: [
       'Basic understanding of Claude Code or Kiro CLI',
@@ -99,7 +99,7 @@ const courses: Record<string, Course> = {
       'Complete course on parallel AI development in Claude Code. Learn the two multi-agent patterns: subagents for focused work within a single session, and agent teams for collaborative tasks requiring direct inter-agent communication.',
     duration: '60 min',
     level: 'Intermediate',
-    presentationUrl: 'https://agentplexus.dev/agentplexus-academy/claude-code-agent-teams-subagents/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/agentplexus-academy/claude-code-agent-teams-subagents/presentation.html',
     githubUrl: 'https://github.com/plexusone/agentplexus-academy/tree/main/claude-code-agent-teams-subagents',
     prerequisites: [
       'Experience with Claude Code',

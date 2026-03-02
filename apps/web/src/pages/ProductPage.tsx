@@ -25,7 +25,7 @@ const products: Product[] = [
       'Unified interface for multiple LLM providers. Switch between OpenAI, Anthropic, Google, xAI, and Ollama without changing your code.',
     color: 'cyan',
     githubUrl: 'https://github.com/plexusone/omnillm',
-    presentationUrl: 'https://agentplexus.dev/omnillm/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/omnillm/presentation.html',
     features: [
       'Single API for OpenAI, Anthropic, Google Gemini, xAI Grok, and Ollama',
       'Streaming and non-streaming response support',
@@ -50,7 +50,7 @@ const products: Product[] = [
       'Unified secret management across providers. Use environment variables, files, OS keyring, or AWS secret managers with the same API.',
     color: 'purple',
     githubUrl: 'https://github.com/plexusone/omnivault',
-    presentationUrl: 'https://agentplexus.dev/omnivault/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/omnivault/presentation.html',
     features: [
       'Environment variables and .env file support',
       'File-based secret storage',
@@ -75,7 +75,7 @@ const products: Product[] = [
       'Unified search API for multiple providers. Query Serper, SerpAPI, or other search backends with a consistent interface.',
     color: 'pink',
     githubUrl: 'https://github.com/plexusone/omniserp',
-    presentationUrl: 'https://agentplexus.dev/omniserp/',
+    presentationUrl: 'https://plexusone.github.io/omniserp/presentation.html',
     features: [
       'Web search across Serper.dev and SerpAPI',
       'News, images, and video search support',
@@ -100,7 +100,7 @@ const products: Product[] = [
       'Unified observability for LLM applications. Send traces to Opik (Comet), Langfuse, or Phoenix (Arize) without vendor lock-in.',
     color: 'violet',
     githubUrl: 'https://github.com/plexusone/omniobserve',
-    presentationUrl: 'https://agentplexus.dev/omniobserve/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/omniobserve/presentation.html',
     features: [
       'Zero-config integration with OmniLLM via hooks',
       'Support for Opik (Comet), Langfuse, and Phoenix (Arize)',
@@ -125,7 +125,7 @@ const products: Product[] = [
       'Security posture assessment for macOS, Windows, and Linux. Check TPM, Secure Boot, disk encryption, and biometrics.',
     color: 'cyan',
     githubUrl: 'https://github.com/plexusone/posture',
-    presentationUrl: 'https://agentplexus.dev/posture/',
+    presentationUrl: 'https://plexusone.github.io/posture/index.html',
     features: [
       'Cross-platform support (macOS, Windows, Linux)',
       'TPM and Secure Boot detection',
@@ -150,8 +150,8 @@ const products: Product[] = [
       'Combines Posture security checks with OmniVault secret management. Enforce security policies before credential access.',
     color: 'purple',
     githubUrl: 'https://github.com/plexusone/vaultguard',
-    docsUrl: 'https://agentplexus.dev/vaultguard/',
-    presentationUrl: 'https://agentplexus.dev/vaultguard/presentation.html',
+    docsUrl: 'https://plexusone.github.io/vaultguard/',
+    presentationUrl: 'https://plexusone.github.io/vaultguard/presentation.html',
     features: [
       'Policy-based credential access control',
       'Integration with Posture security checks',
@@ -176,8 +176,8 @@ const products: Product[] = [
       'Building blocks for AI agents. Base agent patterns, LLM factory, Eino orchestration, and multi-runtime deployment to Kubernetes or AWS Bedrock AgentCore.',
     color: 'pink',
     githubUrl: 'https://github.com/plexusone/agentkit',
-    presentationUrl: 'https://agentplexus.dev/agentkit/presentation.html',
-    docsUrl: 'https://agentplexus.dev/agentkit/',
+    presentationUrl: 'https://plexusone.github.io/agentkit/presentation.html',
+    docsUrl: 'https://plexusone.github.io/agentkit/',
     features: [
       'Base agent struct with OmniLLM integration',
       'Multi-provider model factory (5 providers)',
@@ -202,7 +202,7 @@ const products: Product[] = [
       'Unified API for speech-to-text and text-to-speech. Currently supports ElevenLabs and Twilio, with more providers coming soon.',
     color: 'violet',
     githubUrl: 'https://github.com/plexusone/omnivoice',
-    presentationUrl: 'https://agentplexus.dev/omnivoice/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/omnivoice-core/presentation.html',
     features: [
       'ElevenLabs text-to-speech integration',
       'Twilio voice and phone call support',
@@ -227,7 +227,7 @@ const products: Product[] = [
       'CLI tool that transforms multi-agent-spec definitions into platform-specific plugins. Generate custom subagents for Claude Code and Kiro CLI from a single specification.',
     color: 'cyan',
     githubUrl: 'https://github.com/plexusone/assistantkit',
-    presentationUrl: 'https://agentplexus.dev/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
     features: [
       'Generate Claude Code subagents from multi-agent-spec',
       'Generate Kiro CLI plugins from the same specification',

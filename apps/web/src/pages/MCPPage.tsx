@@ -68,7 +68,7 @@ const otherServers: OtherServer[] = [
     description: 'Read and write Confluence pages without corrupting tables. Structured blocks for creation, raw XHTML for lossless editing.',
     tools: ['read_page', 'create_page', 'update_page', 'search_pages'],
     blogSlug: 'mcp-confluence-table-corruption',
-    presentationUrl: 'https://agentplexus.dev/mcp-confluence/',
+    presentationUrl: 'https://plexusone.github.io/mcp-confluence/',
   },
 ]
 

@@ -30,14 +30,14 @@ const postMeta: Record<string, PostMeta> = {
         slug: 'building-subagents',
         name: 'Building Subagents with Claude Code & Kiro CLI',
         tagline: 'Create custom subagents using multi-agent-spec and AssistantKit',
-        presentationUrl: 'https://agentplexus.dev/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
+        presentationUrl: 'https://plexusone.github.io/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
         linkType: 'academy',
       },
       {
         slug: 'agent-teams-subagents',
         name: 'Claude Code: Agent Teams vs Subagents',
         tagline: 'Master multi-agent orchestration patterns in Claude Code',
-        presentationUrl: 'https://agentplexus.dev/agentplexus-academy/claude-code-agent-teams-subagents/presentation.html',
+        presentationUrl: 'https://plexusone.github.io/agentplexus-academy/claude-code-agent-teams-subagents/presentation.html',
         linkType: 'academy',
       },
     ],
@@ -70,7 +70,7 @@ const postMeta: Record<string, PostMeta> = {
         slug: 'omniobserve-agentops',
         name: 'OmniObserve AgentOps',
         tagline: 'OpenTelemetry Semantic Conventions for Multi-Agent AI',
-        presentationUrl: 'https://agentplexus.dev/omniobserve/semconvagent.html',
+        presentationUrl: 'https://plexusone.github.io/omniobserve/semconvagent.html',
       },
     ],
     relatedProducts: [
@@ -78,20 +78,20 @@ const postMeta: Record<string, PostMeta> = {
     ],
   },
   'ai-assisted-sdk-development': {
-    githubUrl: 'https://github.com/plexusone/go-opik',
+    githubUrl: 'https://github.com/plexusone/opik-go',
     projectUrl: '/projects/go-opik',
     relatedProjects: [
       {
         slug: 'go-opik',
-        name: 'go-opik',
+        name: 'opik-go',
         tagline: 'Go SDK for LLM Observability - Built in 4-5 Hours',
-        presentationUrl: 'https://agentplexus.dev/go-opik/presentation.html',
+        presentationUrl: 'https://plexusone.github.io/opik-go/presentation.html',
       },
       {
         slug: 'go-elevenlabs',
-        name: 'go-elevenlabs',
+        name: 'elevenlabs-go',
         tagline: 'Go SDK for AI Audio Generation - 19 Services',
-        presentationUrl: 'https://agentplexus.dev/go-elevenlabs/presentation.html',
+        presentationUrl: 'https://plexusone.github.io/elevenlabs-go/presentation.html',
       },
     ],
     relatedProducts: [
@@ -100,14 +100,14 @@ const postMeta: Record<string, PostMeta> = {
     ],
   },
   'building-stats-agent-team': {
-    githubUrl: 'https://github.com/plexusone/stats-agent-team',
+    githubUrl: 'https://github.com/plexusone/agent-team-stats',
     projectUrl: '/projects/stats-agent-team',
     relatedProjects: [
       {
         slug: 'stats-agent-team',
         name: 'Statistics Agent Team',
         tagline: 'Multi-Agent Statistics Verification System',
-        presentationUrl: 'https://agentplexus.dev/stats-agent-team/presentation.html',
+        presentationUrl: 'https://plexusone.github.io/agent-team-stats/presentation.html',
       },
     ],
     relatedProducts: [

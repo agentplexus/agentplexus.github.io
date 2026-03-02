@@ -27,7 +27,7 @@ const courses: Course[] = [
       { icon: Workflow, text: 'Plugin generation workflow' },
       { icon: Layers, text: 'Multi-platform deployment' },
     ],
-    presentationUrl: 'https://agentplexus.dev/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/agentplexus-academy/agents-claude-code-kiro-cli/presentation.html',
   },
   {
     name: 'Claude Code: Agent Teams vs Subagents',
@@ -43,7 +43,7 @@ const courses: Course[] = [
       { icon: Layers, text: 'Parallel execution patterns' },
       { icon: Code, text: 'Real-world use cases' },
     ],
-    presentationUrl: 'https://agentplexus.dev/agentplexus-academy/claude-code-agent-teams-subagents/presentation.html',
+    presentationUrl: 'https://plexusone.github.io/agentplexus-academy/claude-code-agent-teams-subagents/presentation.html',
   },
 ]
 
