@@ -1,0 +1,25 @@
+# Cloudflare Pages Headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+# Products JSON - cache for 1 hour, serve stale while revalidating for 24h
+/data/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Access-Control-Allow-Origin: *
+
+# Static assets - cache for 1 year (fingerprinted by build)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - cache for 1 week
+/*.png
+  Cache-Control: public, max-age=604800
+
+/*.ico
+  Cache-Control: public, max-age=604800
+
+# Feeds - cache for 1 hour
+/atom.xml
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
