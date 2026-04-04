@@ -1,10 +1,10 @@
-# robots.txt for AgentPlexus
+# robots.txt for PlexusOne
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://agentplexus.dev/sitemap.xml
+Sitemap: https://plexusone.dev/sitemap.xml
 
 # AI Crawlers - see llms.txt for guidance
-# https://agentplexus.dev/llms.txt
+# https://plexusone.dev/llms.txt

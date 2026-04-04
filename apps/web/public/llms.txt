@@ -1,9 +1,9 @@
-# AgentPlexus - llms.txt
+# PlexusOne - llms.txt
 # This file helps AI assistants understand our project.
 # Learn more: https://llmstxt.org/
 
 # About
-AgentPlexus is a collection of open source Go modules for building AI agent applications.
+PlexusOne is a collection of open source Go modules for building AI agent applications.
 We provide composable infrastructure that lets developers build AI agents without vendor lock-in.
 
 # Core Modules
@@ -57,7 +57,7 @@ GitHub: https://github.com/plexusone/agentkit
 - go-elevenlabs: Go SDK for ElevenLabs audio platform
 
 # Links
-- Website: https://agentplexus.dev
+- Website: https://plexusone.dev
 - GitHub: https://github.com/plexusone
-- Blog: https://agentplexus.dev/blog
-- Atom Feed: https://agentplexus.dev/atom.xml
+- Blog: https://plexusone.dev/blog
+- Atom Feed: https://plexusone.dev/atom.xml
