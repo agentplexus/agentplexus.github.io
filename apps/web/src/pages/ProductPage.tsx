@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, ExternalLink, Github, CheckCircle, Lightbulb, BookOpen } from 'lucide-react'
-import { PresentationEmbed } from '@agentplexus/presentation-embed'
+import { PresentationEmbed } from '@plexusone/presentation-embed'
 import { cn } from '../lib/utils'
 
 interface Product {

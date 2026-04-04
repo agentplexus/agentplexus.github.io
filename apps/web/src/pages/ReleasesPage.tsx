@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 
 // Default releases JSON URL
-const DEFAULT_RELEASES_URL = '/releases/agentplexus-releases.json'
+const DEFAULT_RELEASES_URL = '/releases/plexusone-releases.json'
 
 export function ReleasesPage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -102,7 +102,7 @@ export function ReleasesPage() {
       const params = new URLSearchParams(window.location.search)
       const urlParam = params.get('url') || DEFAULT_RELEASES_URL
 
-      // AgentPlexus cyan color palette for heatmap
+      // PlexusOne cyan color palette for heatmap
       const heatmapColors = ['#1e293b', '#164e63', '#0e7490', '#06b6d4', '#22d3ee']
 
       viewerRef.current = new ReleaseLogViewer(containerRef.current, {
@@ -145,9 +145,9 @@ export function ReleasesPage() {
 
   return (
     <div className="min-h-screen pt-16" style={{ backgroundColor: '#0a0e1a' }}>
-      {/* AgentPlexus dark theme overrides for ReleaseLog viewer */}
+      {/* PlexusOne dark theme overrides for ReleaseLog viewer */}
       <style>{`
-        /* Override ReleaseLog CSS variables for AgentPlexus dark theme */
+        /* Override ReleaseLog CSS variables for PlexusOne dark theme */
         #releases-container {
           --rlv-color-text: #e2e8f0;
           --rlv-color-text-muted: #94a3b8;

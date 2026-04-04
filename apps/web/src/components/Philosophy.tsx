@@ -66,7 +66,7 @@ export function Philosophy() {
             <p className="text-gray-300">
               Many frameworks bundle useful abstractions that can't be used outside that framework.
               LLM libraries coupled to specific orchestration patterns. Storage backends buried in monolithic tools.
-              AgentPlexus modules are designed from day one to be used independently—whether you're
+              PlexusOne modules are designed from day one to be used independently—whether you're
               building with ADK, LangChain, your own framework, or no framework at all.
             </p>
           </div>

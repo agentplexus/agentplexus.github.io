@@ -20,17 +20,17 @@ export const blogPosts: BlogPost[] = [
     date: '2026-02-22',
     readTime: '7 min',
     tags: ['Multi-Agent', 'Subagents', 'Claude Code', 'Agent Teams'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
   {
     slug: 'introducing-releases-page',
-    title: 'Introducing the Releases Page: Tracking Progress Across AgentPlexus',
+    title: 'Introducing the Releases Page: Tracking Progress Across PlexusOne',
     excerpt:
-      'We built ReleaseLog to aggregate GitHub releases across all our repositories into a single, filterable view with a GitHub-style heatmap. Now live at agentplexus.dev/releases.',
+      'We built ReleaseLog to aggregate GitHub releases across all our repositories into a single, filterable view with a GitHub-style heatmap. Now live at plexusone.dev/releases.',
     date: '2026-02-02',
     readTime: '5 min',
     tags: ['Releases', 'Open Source', 'Engineering'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
   {
     slug: 'mcp-confluence-table-corruption',
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     date: '2024-12-29',
     readTime: '6 min',
     tags: ['MCP', 'Confluence', 'Engineering'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
   {
     slug: 'security-gated-mcp-servers',
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
     date: '2024-12-29',
     readTime: '8 min',
     tags: ['MCP', 'Security', 'VaultGuard', 'OmniVault'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
   {
     slug: 'wcag-accessibility-with-ai',
@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
     date: '2024-12-29',
     readTime: '12 min',
     tags: ['Accessibility', 'WCAG', 'Engineering'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
   {
     slug: 'otel-semantic-conventions-agentic-ai',
@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
     date: '2024-12-28',
     readTime: '8 min',
     tags: ['OpenTelemetry', 'Observability', 'Multi-Agent', 'OmniObserve'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
   {
     slug: 'ai-assisted-sdk-development',
@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
     date: '2024-12-28',
     readTime: '8 min',
     tags: ['Claude Opus 4.5', 'SDK Development', 'Go', 'Engineering'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
   {
     slug: 'building-stats-agent-team',
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
     date: '2024-12-28',
     readTime: '10 min',
     tags: ['Multi-Agent', 'OmniLLM', 'OmniSerp', 'Case Study'],
-    author: 'AgentPlexus Team',
+    author: 'PlexusOne Team',
   },
 ]
 

@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, ExternalLink, Github, CheckCircle, BookOpen } from 'lucide-react'
-import { PresentationEmbed } from '@agentplexus/presentation-embed'
+import { PresentationEmbed } from '@plexusone/presentation-embed'
 
 interface Project {
   name: string
@@ -333,7 +333,7 @@ export function ProjectPage() {
 
         {/* Modules Used */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">AgentPlexus Modules Used</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">PlexusOne Modules Used</h2>
           <div className="space-y-4">
             {project.modules.map((mod) => (
               <div

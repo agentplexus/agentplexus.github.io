@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  /* AgentPlexus Color Palette - from logo */
+  /* PlexusOne Color Palette - from logo */
   --color-plexus-dark: #0a0e1a;
   --color-plexus-navy: #0f172a;
   --color-plexus-slate: #1e293b;

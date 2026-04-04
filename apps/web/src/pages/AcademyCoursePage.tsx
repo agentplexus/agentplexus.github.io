@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, ExternalLink, Github, CheckCircle, BookOpen, Clock, GraduationCap } from 'lucide-react'
-import { PresentationEmbed } from '@agentplexus/presentation-embed'
+import { PresentationEmbed } from '@plexusone/presentation-embed'
 
 interface Course {
   name: string

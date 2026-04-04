@@ -7,10 +7,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src="/icon.png" alt="AgentPlexus" className="h-8 w-8" />
+            <img src="/icon.png" alt="PlexusOne" className="h-8 w-8" />
             <span className="text-lg font-bold">
-              <span className="text-white">Agent</span>
-              <span className="gradient-text">Plexus</span>
+              <span className="text-white">Plexus</span>
+              <span className="gradient-text">One</span>
             </span>
           </Link>
 
@@ -32,7 +32,7 @@ export function Footer() {
             Built with Go. Designed for composability.
           </p>
           <p className="text-gray-600 text-sm mt-2">
-            © {new Date().getFullYear()} AgentPlexus. MIT License.
+            © {new Date().getFullYear()} PlexusOne. MIT License.
           </p>
         </div>
       </div>

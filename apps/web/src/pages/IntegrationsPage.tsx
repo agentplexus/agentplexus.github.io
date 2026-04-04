@@ -259,7 +259,7 @@ export function IntegrationsPage() {
             <span className="gradient-text">Integrations</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            AgentPlexus modules integrate with the tools and platforms you already use.
+            PlexusOne modules integrate with the tools and platforms you already use.
           </p>
         </div>
 

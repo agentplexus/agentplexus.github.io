@@ -20,7 +20,7 @@ const mcpServers: MCPServer[] = [
   {
     name: 'OmniSerp',
     binary: 'mcp-omniserp',
-    repo: 'agentplexus/omniserp',
+    repo: 'plexusone/omniserp',
     repoUrl: 'https://github.com/plexusone/omniserp',
     description: 'Web search capabilities for Claude. Search Google, get news, images, and more.',
     tools: ['search', 'news_search', 'image_search'],
@@ -30,7 +30,7 @@ const mcpServers: MCPServer[] = [
   {
     name: 'Posture',
     binary: 'mcp-posture',
-    repo: 'agentplexus/posture',
+    repo: 'plexusone/posture',
     repoUrl: 'https://github.com/plexusone/posture',
     description: 'Security posture assessment. Check device security, encryption, TPM, and biometrics.',
     tools: ['check_security', 'get_summary', 'get_score'],
@@ -40,7 +40,7 @@ const mcpServers: MCPServer[] = [
   {
     name: 'Stats Agent',
     binary: 'mcp-stats-agent',
-    repo: 'agentplexus/stats-agent-team',
+    repo: 'plexusone/stats-agent-team',
     repoUrl: 'https://github.com/plexusone/stats-agent-team',
     description: 'Research and verify statistics. Multi-agent team that finds, validates, and sources facts.',
     tools: ['research_stats', 'verify_claim'],
@@ -63,7 +63,7 @@ const otherServers: OtherServer[] = [
   {
     name: 'Confluence',
     binary: 'mcp-confluence',
-    repo: 'agentplexus/mcp-confluence',
+    repo: 'plexusone/mcp-confluence',
     repoUrl: 'https://github.com/plexusone/mcp-confluence',
     description: 'Read and write Confluence pages without corrupting tables. Structured blocks for creation, raw XHTML for lossless editing.',
     tools: ['read_page', 'create_page', 'update_page', 'search_pages'],
@@ -141,7 +141,7 @@ export function MCPPage() {
             <span className="gradient-text">MCP Servers</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Extend Claude Desktop with AgentPlexus capabilities via the{' '}
+            Extend Claude Desktop with PlexusOne capabilities via the{' '}
             <a
               href="https://modelcontextprotocol.io"
               target="_blank"
@@ -286,7 +286,7 @@ export function MCPPage() {
         <div className="mt-16">
           <h2 className="text-2xl font-bold text-white mb-2">Other Servers</h2>
           <p className="text-gray-400 mb-6">
-            MCP servers published by AgentPlexus for specific integrations. Future releases will add{' '}
+            MCP servers published by PlexusOne for specific integrations. Future releases will add{' '}
             <Link to="/products/vaultguard" className="text-plexus-purple hover:underline">
               VaultGuard
             </Link>{' '}
@@ -386,7 +386,7 @@ export function MCPPage() {
             use during conversations.
           </p>
           <p className="text-gray-400">
-            AgentPlexus MCP servers bring our Go modules to Claude Desktop, enabling web search,
+            PlexusOne MCP servers bring our Go modules to Claude Desktop, enabling web search,
             security checks, statistics verification, and more—all through natural conversation.
           </p>
           <div className="mt-6">

@@ -22,7 +22,7 @@ const applications: Application[] = [
     slug: 'omniagent',
     tagline: 'Multi-Runtime AI Agent',
     description:
-      'Production-ready AI agent built on AgentKit. Supports tool use, multi-model providers, and deployment to Kubernetes or AWS Bedrock AgentCore. The reference implementation of the AgentPlexus stack.',
+      'Production-ready AI agent built on AgentKit. Supports tool use, multi-model providers, and deployment to Kubernetes or AWS Bedrock AgentCore. The reference implementation of the PlexusOne stack.',
     githubUrl: 'https://github.com/plexusone/omniagent',
     docsUrl: 'https://plexusone.github.io/omniagent/',
     highlights: [
@@ -69,7 +69,7 @@ export function ApplicationsPage() {
             <span className="gradient-text">Applications</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Production-ready AI applications built on the AgentPlexus stack.
+            Production-ready AI applications built on the PlexusOne stack.
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export function ApplicationsPage() {
                     <pre className="text-sm text-gray-400 overflow-x-auto whitespace-pre-wrap">
 {`# Clone and run
 git clone https://github.com/\\
-  agentplexus/omniagent
+  plexusone/omniagent
 cd omniagent
 
 # Configure

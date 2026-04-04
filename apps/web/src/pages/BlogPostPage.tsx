@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock, Github, Play, ExternalLink } from 'lucide-react'
-import { MarkdownRenderer, useMarkdownContent } from '@agentplexus/markdown-blog'
+import { MarkdownRenderer, useMarkdownContent } from '@plexusone/markdown-blog'
 import { blogPosts } from './BlogPage'
 
 interface RelatedProduct {
@@ -286,7 +286,7 @@ export function BlogPostPage() {
           <div className="mt-16 p-8 rounded-xl border border-white/10 bg-plexus-slate/30 text-center">
             <h3 className="text-xl font-bold text-white mb-2">Want to build something similar?</h3>
             <p className="text-gray-400 mb-6">
-              Check out the AgentPlexus modules related to this project.
+              Check out the PlexusOne modules related to this project.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {extra.relatedProducts.map((product) => (

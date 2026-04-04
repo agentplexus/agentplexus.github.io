@@ -13,13 +13,13 @@ export function Hero() {
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <img
           src="/icon.png"
-          alt="AgentPlexus"
+          alt="PlexusOne"
           className="w-32 h-32 mx-auto mb-8 drop-shadow-2xl"
         />
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          <span className="text-white">Agent</span>
-          <span className="gradient-text">Plexus</span>
+          <span className="text-white">Plexus</span>
+          <span className="gradient-text">One</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-4">
@@ -43,7 +43,7 @@ export function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-white/20 text-white font-semibold hover:bg-white/5 focus-visible:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plexus-purple focus-visible:ring-offset-2 focus-visible:ring-offset-plexus-dark"
-            aria-label="View AgentPlexus on GitHub (opens in new tab)"
+            aria-label="View PlexusOne on GitHub (opens in new tab)"
           >
             <Github size={18} />
             View on GitHub
