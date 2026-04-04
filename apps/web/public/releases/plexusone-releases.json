@@ -519,7 +519,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omniagent/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omniagent/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-02-23T06:47:31Z",
       "createdAt": "2026-02-23T06:41:01Z",
       "urls": {
@@ -541,7 +541,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omniagent/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omniagent/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-02-22T20:13:58Z",
       "createdAt": "2026-02-22T20:09:44Z",
       "urls": {
@@ -563,7 +563,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnichat/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnichat/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-02-22T19:48:44Z",
       "createdAt": "2026-02-22T19:44:19Z",
       "urls": {
@@ -585,7 +585,7 @@
       "type": "release",
       "tagName": "v0.3.1",
       "name": "v0.3.1",
-      "body": "**Release Notes**: [`v0.3.1`](RELEASE_NOTES_v0.3.1.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice-deepgram/compare/v0.3.0...v0.3.1",
+      "body": "**Release Notes**: [`v0.3.1`](RELEASE_NOTES_v0.3.1.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice-deepgram/compare/v0.3.0...v0.3.1",
       "publishedAt": "2026-02-22T19:41:03Z",
       "createdAt": "2026-02-22T19:37:27Z",
       "urls": {
@@ -607,7 +607,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/envoy/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/envoy/commits/v0.1.0",
       "publishedAt": "2026-02-22T17:38:32Z",
       "createdAt": "2026-02-22T17:31:44Z",
       "urls": {
@@ -629,7 +629,7 @@
       "type": "release",
       "tagName": "v0.6.0",
       "name": "v0.6.0",
-      "body": "**Release Notes**: [`v0.6.0`](https://agentplexus.dev/omniobserve/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omniobserve/compare/v0.5.1...v0.6.0",
+      "body": "**Release Notes**: [`v0.6.0`](https://plexusone.dev/omniobserve/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omniobserve/compare/v0.5.1...v0.6.0",
       "publishedAt": "2026-02-22T16:53:43Z",
       "createdAt": "2026-02-22T16:48:09Z",
       "urls": {
@@ -651,7 +651,7 @@
       "type": "release",
       "tagName": "v0.12.0",
       "name": "v0.12.0",
-      "body": "**Release Notes**: [`v0.12.0`](https://plexusone.github.io/omnillm/releases/v0.12.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnillm/compare/v0.11.1...v0.12.0",
+      "body": "**Release Notes**: [`v0.12.0`](https://plexusone.github.io/omnillm/releases/v0.12.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnillm/compare/v0.11.1...v0.12.0",
       "publishedAt": "2026-02-22T16:28:26Z",
       "createdAt": "2026-02-22T16:21:16Z",
       "urls": {
@@ -673,7 +673,7 @@
       "type": "release",
       "tagName": "v0.1.1",
       "name": "v0.1.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnivault-keyring/compare/v0.1.0...v0.1.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnivault-keyring/compare/v0.1.0...v0.1.1",
       "publishedAt": "2026-02-22T16:01:03Z",
       "createdAt": "2026-02-22T15:54:45Z",
       "urls": {
@@ -695,7 +695,7 @@
       "type": "release",
       "tagName": "v0.2.2",
       "name": "v0.2.2",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnivault/compare/v0.2.1...v0.2.2",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnivault/compare/v0.2.1...v0.2.2",
       "publishedAt": "2026-02-22T15:52:02Z",
       "createdAt": "2026-02-22T15:13:04Z",
       "urls": {
@@ -717,7 +717,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnichat/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnichat/commits/v0.1.0",
       "publishedAt": "2026-02-22T15:47:48Z",
       "createdAt": "2026-02-22T14:57:44Z",
       "urls": {
@@ -739,7 +739,7 @@
       "type": "release",
       "tagName": "v0.8.2",
       "name": "v0.8.2",
-      "body": "**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.8.1...v0.8.2",
+      "body": "**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.8.1...v0.8.2",
       "publishedAt": "2026-02-21T23:05:46Z",
       "createdAt": "2026-02-21T22:59:58Z",
       "urls": {
@@ -761,7 +761,7 @@
       "type": "release",
       "tagName": "v0.10.0",
       "name": "v0.10.0",
-      "body": "**Release Notes**: [`v0.10.0`](https://agentplexus.dev/assistantkit/releases/v0.10.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/assistantkit/compare/v0.9.0...v0.10.0",
+      "body": "**Release Notes**: [`v0.10.0`](https://plexusone.dev/assistantkit/releases/v0.10.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/assistantkit/compare/v0.9.0...v0.10.0",
       "publishedAt": "2026-02-21T22:49:26Z",
       "createdAt": "2026-02-21T22:45:05Z",
       "urls": {
@@ -783,7 +783,7 @@
       "type": "release",
       "tagName": "sdk/go/v0.7.0",
       "name": "sdk/go/v0.7.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/sdk/go/v0.6.0...sdk/go/v0.7.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/sdk/go/v0.6.0...sdk/go/v0.7.0",
       "publishedAt": "2026-02-21T21:49:09Z",
       "createdAt": "2026-02-21T21:09:39Z",
       "urls": {
@@ -805,7 +805,7 @@
       "type": "release",
       "tagName": "v0.6.0",
       "name": "v0.6.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/v0.5.0...v0.6.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/v0.5.0...v0.6.0",
       "publishedAt": "2026-02-21T21:48:35Z",
       "createdAt": "2026-02-21T21:09:39Z",
       "urls": {
@@ -827,7 +827,7 @@
       "type": "release",
       "tagName": "v0.4.3",
       "name": "v0.4.3",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnivoice/compare/v0.4.2...v0.4.3",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnivoice/compare/v0.4.2...v0.4.3",
       "publishedAt": "2026-02-15T10:32:23Z",
       "createdAt": "2026-02-15T10:22:37Z",
       "urls": {
@@ -849,7 +849,7 @@
       "type": "release",
       "tagName": "v0.3.2",
       "name": "v0.3.2",
-      "body": "**Full Changelog**: https://github.com/agentplexus/mcpkit/compare/v0.3.1...v0.3.2",
+      "body": "**Full Changelog**: https://github.com/plexusone/mcpkit/compare/v0.3.1...v0.3.2",
       "publishedAt": "2026-02-15T08:47:56Z",
       "createdAt": "2026-02-15T08:31:23Z",
       "urls": {
@@ -871,7 +871,7 @@
       "type": "release",
       "tagName": "v0.4.2",
       "name": "v0.4.2",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnivoice/compare/v0.4.1...v0.4.2",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnivoice/compare/v0.4.1...v0.4.2",
       "publishedAt": "2026-02-15T08:40:56Z",
       "createdAt": "2026-02-15T08:37:15Z",
       "urls": {
@@ -893,7 +893,7 @@
       "type": "release",
       "tagName": "v0.5.0",
       "name": "v0.5.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/v0.4.0...v0.5.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/v0.4.0...v0.5.0",
       "publishedAt": "2026-02-15T06:25:37Z",
       "createdAt": "2026-02-15T06:15:13Z",
       "urls": {
@@ -915,7 +915,7 @@
       "type": "release",
       "tagName": "sdk/go/v0.6.0",
       "name": "sdk/go/v0.6.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/sdk/go/v0.5.0...sdk/go/v0.6.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/sdk/go/v0.5.0...sdk/go/v0.6.0",
       "publishedAt": "2026-02-15T06:25:22Z",
       "createdAt": "2026-02-15T06:15:13Z",
       "urls": {
@@ -937,7 +937,7 @@
       "type": "release",
       "tagName": "v0.8.1",
       "name": "v0.8.1",
-      "body": "**Release Notes**: [`v0.8.1`](https://agentplexus.dev/go-elevenlabs/releases/v0.8.1/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.8.0...v0.8.1",
+      "body": "**Release Notes**: [`v0.8.1`](https://plexusone.dev/go-elevenlabs/releases/v0.8.1/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.8.0...v0.8.1",
       "publishedAt": "2026-02-15T04:08:33Z",
       "createdAt": "2026-02-15T04:02:26Z",
       "urls": {
@@ -959,7 +959,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice-deepgram/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice-deepgram/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-02-15T03:48:58Z",
       "createdAt": "2026-02-15T03:39:23Z",
       "urls": {
@@ -981,7 +981,7 @@
       "type": "release",
       "tagName": "v0.4.1",
       "name": "v0.4.1",
-      "body": "**Release Notes**: [`v0.4.1`](https://agentplexus.dev/omnivoice/releases/v0.4.1/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice/compare/v0.4.0...v0.4.1",
+      "body": "**Release Notes**: [`v0.4.1`](https://plexusone.dev/omnivoice/releases/v0.4.1/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice/compare/v0.4.0...v0.4.1",
       "publishedAt": "2026-02-15T03:28:42Z",
       "createdAt": "2026-02-15T03:09:55Z",
       "urls": {
@@ -1003,7 +1003,7 @@
       "type": "release",
       "tagName": "v0.8.0",
       "name": "v0.8.0",
-      "body": "**Release Notes**: [`v0.8.0`](https://agentplexus.dev/go-elevenlabs/releases/v0.8.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.7.0...v0.8.0",
+      "body": "**Release Notes**: [`v0.8.0`](https://plexusone.dev/go-elevenlabs/releases/v0.8.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.7.0...v0.8.0",
       "publishedAt": "2026-02-15T02:24:52Z",
       "createdAt": "2026-02-15T02:16:51Z",
       "urls": {
@@ -1025,7 +1025,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Release Notes**: [`v0.4.0`](https://agentplexus.dev/omnivoice/releases/v0.4.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice/compare/v0.3.0...v0.4.0",
+      "body": "**Release Notes**: [`v0.4.0`](https://plexusone.dev/omnivoice/releases/v0.4.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice/compare/v0.3.0...v0.4.0",
       "publishedAt": "2026-02-15T01:53:56Z",
       "createdAt": "2026-02-15T01:50:53Z",
       "urls": {
@@ -1047,7 +1047,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Release Notes**: [`v0.4.0`](RELEASE_NOTES_v0.4.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentkit/compare/v0.3.0...v0.4.0",
+      "body": "**Release Notes**: [`v0.4.0`](RELEASE_NOTES_v0.4.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentkit/compare/v0.3.0...v0.4.0",
       "publishedAt": "2026-02-02T11:11:42Z",
       "createdAt": "2026-02-02T11:07:29Z",
       "urls": {
@@ -1069,7 +1069,7 @@
       "type": "release",
       "tagName": "v0.9.0",
       "name": "v0.9.0",
-      "body": "**Release Notes**: [`v0.9.0`](https://agentplexus.dev/assistantkit/releases/v0.9.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/assistantkit/compare/v0.8.0...v0.9.0",
+      "body": "**Release Notes**: [`v0.9.0`](https://plexusone.dev/assistantkit/releases/v0.9.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/assistantkit/compare/v0.8.0...v0.9.0",
       "publishedAt": "2026-02-02T10:53:01Z",
       "createdAt": "2026-02-02T10:46:21Z",
       "urls": {
@@ -1085,19 +1085,19 @@
     },
     {
       "id": 282124380,
-      "repoPath": "plexusone/agentplexus.github.io",
+      "repoPath": "plexusone/plexusone.github.io",
       "repoOwner": "plexusone",
-      "repoName": "agentplexus.github.io",
+      "repoName": "plexusone.github.io",
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/agentplexus.github.io/compare/v0.1.0...v0.2.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/plexusone.github.io/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-02-02T10:39:19Z",
       "createdAt": "2026-02-02T10:35:11Z",
       "urls": {
-        "githubRelease": "https://github.com/plexusone/agentplexus.github.io/releases/tag/v0.2.0",
-        "tarball": "https://api.github.com/repos/plexusone/agentplexus.github.io/tarball/v0.2.0",
-        "zipball": "https://api.github.com/repos/plexusone/agentplexus.github.io/zipball/v0.2.0"
+        "githubRelease": "https://github.com/plexusone/plexusone.github.io/releases/tag/v0.2.0",
+        "tarball": "https://api.github.com/repos/plexusone/plexusone.github.io/tarball/v0.2.0",
+        "zipball": "https://api.github.com/repos/plexusone/plexusone.github.io/zipball/v0.2.0"
       },
       "author": {
         "login": "grokify",
@@ -1107,19 +1107,19 @@
     },
     {
       "id": 282099739,
-      "repoPath": "plexusone/agentplexus.github.io",
+      "repoPath": "plexusone/plexusone.github.io",
       "repoOwner": "plexusone",
-      "repoName": "agentplexus.github.io",
+      "repoName": "plexusone.github.io",
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/agentplexus.github.io/commits/v0.1.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/plexusone.github.io/commits/v0.1.0",
       "publishedAt": "2026-02-02T09:22:33Z",
       "createdAt": "2026-01-05T00:48:55Z",
       "urls": {
-        "githubRelease": "https://github.com/plexusone/agentplexus.github.io/releases/tag/v0.1.0",
-        "tarball": "https://api.github.com/repos/plexusone/agentplexus.github.io/tarball/v0.1.0",
-        "zipball": "https://api.github.com/repos/plexusone/agentplexus.github.io/zipball/v0.1.0"
+        "githubRelease": "https://github.com/plexusone/plexusone.github.io/releases/tag/v0.1.0",
+        "tarball": "https://api.github.com/repos/plexusone/plexusone.github.io/tarball/v0.1.0",
+        "zipball": "https://api.github.com/repos/plexusone/plexusone.github.io/zipball/v0.1.0"
       },
       "author": {
         "login": "grokify",
@@ -1135,7 +1135,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice-deepgram/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice-deepgram/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-02-02T08:29:00Z",
       "createdAt": "2026-02-02T08:25:39Z",
       "urls": {
@@ -1157,7 +1157,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agent-team-prd/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agent-team-prd/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-01-30T14:02:22Z",
       "createdAt": "2026-01-30T13:53:25Z",
       "urls": {
@@ -1179,7 +1179,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Releaase Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentplexus/commits/v0.1.0",
+      "body": "**Releaase Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentplexus/commits/v0.1.0",
       "publishedAt": "2026-01-26T15:52:23Z",
       "createdAt": "2026-01-26T15:42:51Z",
       "urls": {
@@ -1201,7 +1201,7 @@
       "type": "release",
       "tagName": "v0.7.0",
       "name": "v0.7.0",
-      "body": "## Release v0.7.0\n\ndocs(MkDocs): update `mkdocs.yml`\n\n## Changelog\n### Features\n* ed7da9c585b5dd10539039d5f0683787f469065e: feat(checks): replace language-specific checks with releasekit integration (@grokify)\n### Bug Fixes\n* 14b6fb23209aab446a55a38a4c015797adfa7191: fix(checks): remove unused helper functions (@grokify)\n### Refactoring\n* 5761d0a01df7a1da37aabe43bcade9b4414c27b3: refactor(plugins): restructure plugin layout with specs directory (@grokify)\n### Other\n* ea734a4a5c961fa2373c19b22b5079eef5ee003a: build(deps): bump github.com/agentplexus/multi-agent-spec/sdk/go (@dependabot[bot])\n* 747b7c4275d21ab210f0f69c896944943775b3ba: chore(checks): remove obsolete language-specific checkers (@grokify)\n* 737f1d2536c969494516e8a3c7d70a33986e868a: docs(MkDocs): update `mkdocs.yml` (@grokify)\n* 813cc53c455f063738d0779c1ea7a6ec6f4254a3: docs(agents): expand agent documentation with detailed workflows (@grokify)\n\n---\n\n**Full Changelog**: https://github.com/agentplexus/agent-team-release/compare/v0.6.0...v0.7.0\n\n### Installation\n\n```bash\n# Go install\ngo install github.com/agentplexus/agent-team-release/cmd/atrelease@v0.7.0\n\n# Homebrew (macOS/Linux)\nbrew tap agentplexus/tap\nbrew install atrelease\n```\n\n",
+      "body": "## Release v0.7.0\n\ndocs(MkDocs): update `mkdocs.yml`\n\n## Changelog\n### Features\n* ed7da9c585b5dd10539039d5f0683787f469065e: feat(checks): replace language-specific checks with releasekit integration (@grokify)\n### Bug Fixes\n* 14b6fb23209aab446a55a38a4c015797adfa7191: fix(checks): remove unused helper functions (@grokify)\n### Refactoring\n* 5761d0a01df7a1da37aabe43bcade9b4414c27b3: refactor(plugins): restructure plugin layout with specs directory (@grokify)\n### Other\n* ea734a4a5c961fa2373c19b22b5079eef5ee003a: build(deps): bump github.com/plexusone/multi-agent-spec/sdk/go (@dependabot[bot])\n* 747b7c4275d21ab210f0f69c896944943775b3ba: chore(checks): remove obsolete language-specific checkers (@grokify)\n* 737f1d2536c969494516e8a3c7d70a33986e868a: docs(MkDocs): update `mkdocs.yml` (@grokify)\n* 813cc53c455f063738d0779c1ea7a6ec6f4254a3: docs(agents): expand agent documentation with detailed workflows (@grokify)\n\n---\n\n**Full Changelog**: https://github.com/plexusone/agent-team-release/compare/v0.6.0...v0.7.0\n\n### Installation\n\n```bash\n# Go install\ngo install github.com/plexusone/agent-team-release/cmd/atrelease@v0.7.0\n\n# Homebrew (macOS/Linux)\nbrew tap agentplexus/tap\nbrew install atrelease\n```\n\n",
       "publishedAt": "2026-01-26T15:14:43Z",
       "createdAt": "2026-01-26T15:11:07Z",
       "urls": {
@@ -1267,7 +1267,7 @@
       "type": "release",
       "tagName": "v0.8.0",
       "name": "v0.8.0",
-      "body": "**Release Notes**: [`v0.8.0`](https://agentplexus.dev/assistantkit/releases/v0.8.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/assistantkit/compare/v0.7.0...v0.8.0",
+      "body": "**Release Notes**: [`v0.8.0`](https://plexusone.dev/assistantkit/releases/v0.8.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/assistantkit/compare/v0.7.0...v0.8.0",
       "publishedAt": "2026-01-26T13:57:00Z",
       "createdAt": "2026-01-25T21:21:25Z",
       "urls": {
@@ -1289,7 +1289,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agent-team-prd/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes**: [`v0.2.0`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agent-team-prd/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-01-26T13:54:03Z",
       "createdAt": "2026-01-26T13:46:15Z",
       "urls": {
@@ -1311,7 +1311,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agent-team-prd/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agent-team-prd/commits/v0.1.0",
       "publishedAt": "2026-01-26T13:17:04Z",
       "createdAt": "2026-01-25T20:39:27Z",
       "urls": {
@@ -1333,7 +1333,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/v0.3.0...v0.4.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/v0.3.0...v0.4.0",
       "publishedAt": "2026-01-25T17:13:53Z",
       "createdAt": "2026-01-25T17:08:06Z",
       "urls": {
@@ -1355,7 +1355,7 @@
       "type": "release",
       "tagName": "sdk/go/v0.5.0",
       "name": "sdk/go/v0.5.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/sdk/go/v0.4.0...sdk/go/v0.5.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/sdk/go/v0.4.0...sdk/go/v0.5.0",
       "publishedAt": "2026-01-25T17:13:41Z",
       "createdAt": "2026-01-25T17:08:06Z",
       "urls": {
@@ -1377,7 +1377,7 @@
       "type": "release",
       "tagName": "v0.6.0",
       "name": "v0.6.0",
-      "body": "## Release v0.6.0\n\nrefactor!: rename binary from `releaseagent` to `atrelease`\n\n## Changelog\n### Features\n* a07def7b1ec41bac131265d63ba59d9c295ed34d: feat(cli): add `install kiro` command with embedded agent files (@grokify)\n* 6a1ef4d2503bd56f4c33c259eff58c15f6478770: feat(specs): add skill specifications for commit-classification and version-analysis (@grokify)\n### Refactoring\n* 51bb23fe0f9e1f8afaf6bd7b838d0bbe37050c30: refactor!: rename binary from `releaseagent` to `atrelease` (@grokify)\n* 99926c972c1b05dbe29966805f650562fba808e3: refactor!: rename project from release-agent-team to agent-team-release (@grokify)\n* 5a1443044771f9a0255df367515a120d713a0e72: refactor(plugins/kiro): restructure agents with tools/allowedTools arrays (@grokify)\n* 5336159380b04ee1b72e3d187841f54fecab039d: refactor(specs): add allowedTools field and update Claude plugin (@grokify)\n### Other\n* 7bd6a87e18835e60ebcae7f926d8c59f3ed03c4f: chore(ci): `release.yaml`: update go versions (@grokify)\n* 34aa944fd2f12c14b09291f3d1276f89db989c03: chore(deps): `go mod`: update (@grokify)\n\n---\n\n**Full Changelog**: https://github.com/agentplexus/agent-team-release/compare/v0.5.1...v0.6.0\n\n### Installation\n\n```bash\n# Go install\ngo install github.com/agentplexus/agent-team-release/cmd/atrelease@v0.6.0\n\n# Homebrew (macOS/Linux)\nbrew tap agentplexus/tap\nbrew install atrelease\n```\n\n",
+      "body": "## Release v0.6.0\n\nrefactor!: rename binary from `releaseagent` to `atrelease`\n\n## Changelog\n### Features\n* a07def7b1ec41bac131265d63ba59d9c295ed34d: feat(cli): add `install kiro` command with embedded agent files (@grokify)\n* 6a1ef4d2503bd56f4c33c259eff58c15f6478770: feat(specs): add skill specifications for commit-classification and version-analysis (@grokify)\n### Refactoring\n* 51bb23fe0f9e1f8afaf6bd7b838d0bbe37050c30: refactor!: rename binary from `releaseagent` to `atrelease` (@grokify)\n* 99926c972c1b05dbe29966805f650562fba808e3: refactor!: rename project from release-agent-team to agent-team-release (@grokify)\n* 5a1443044771f9a0255df367515a120d713a0e72: refactor(plugins/kiro): restructure agents with tools/allowedTools arrays (@grokify)\n* 5336159380b04ee1b72e3d187841f54fecab039d: refactor(specs): add allowedTools field and update Claude plugin (@grokify)\n### Other\n* 7bd6a87e18835e60ebcae7f926d8c59f3ed03c4f: chore(ci): `release.yaml`: update go versions (@grokify)\n* 34aa944fd2f12c14b09291f3d1276f89db989c03: chore(deps): `go mod`: update (@grokify)\n\n---\n\n**Full Changelog**: https://github.com/plexusone/agent-team-release/compare/v0.5.1...v0.6.0\n\n### Installation\n\n```bash\n# Go install\ngo install github.com/plexusone/agent-team-release/cmd/atrelease@v0.6.0\n\n# Homebrew (macOS/Linux)\nbrew tap agentplexus/tap\nbrew install atrelease\n```\n\n",
       "publishedAt": "2026-01-24T18:40:32Z",
       "createdAt": "2026-01-24T18:32:37Z",
       "urls": {
@@ -1443,7 +1443,7 @@
       "type": "release",
       "tagName": "v0.7.0",
       "name": "v0.7.0",
-      "body": "**Release Notes**: [`v0.7.0`](https://agentplexus.dev/go-elevenlabs/releases/v0.7.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.6.0...v0.7.0",
+      "body": "**Release Notes**: [`v0.7.0`](https://plexusone.dev/go-elevenlabs/releases/v0.7.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.6.0...v0.7.0",
       "publishedAt": "2026-01-24T18:30:04Z",
       "createdAt": "2026-01-24T18:19:19Z",
       "urls": {
@@ -1465,7 +1465,7 @@
       "type": "release",
       "tagName": "v0.7.0",
       "name": "v0.7.0",
-      "body": "**Release Notes**: [`v0.7.0`](https://agentplexus.dev/assistantkit/releases/v0.7.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/assistantkit/compare/v0.6.0...v0.7.0",
+      "body": "**Release Notes**: [`v0.7.0`](https://plexusone.dev/assistantkit/releases/v0.7.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/assistantkit/compare/v0.6.0...v0.7.0",
       "publishedAt": "2026-01-24T17:38:04Z",
       "createdAt": "2026-01-24T17:33:33Z",
       "urls": {
@@ -1487,7 +1487,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes** [`v0.3.0`](https://agentplexus.dev/omnivoice/releases/v0.3.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes** [`v0.3.0`](https://plexusone.dev/omnivoice/releases/v0.3.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-01-24T17:17:31Z",
       "createdAt": "2026-01-24T17:12:59Z",
       "urls": {
@@ -1509,7 +1509,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/v0.2.0...v0.3.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-01-24T16:05:40Z",
       "createdAt": "2026-01-24T15:50:58Z",
       "urls": {
@@ -1531,7 +1531,7 @@
       "type": "release",
       "tagName": "sdk/go/v0.4.0",
       "name": "sdk/go/v0.4.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/commits/sdk/go/v0.4.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/commits/sdk/go/v0.4.0",
       "publishedAt": "2026-01-24T16:05:24Z",
       "createdAt": "2026-01-24T15:50:58Z",
       "urls": {
@@ -1553,7 +1553,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/compare/v0.1.0...v0.2.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/multi-agent-spec/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-01-24T15:18:48Z",
       "createdAt": "2026-01-18T04:43:39Z",
       "urls": {
@@ -1575,7 +1575,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentcall/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentcall/commits/v0.1.0",
       "publishedAt": "2026-01-19T12:03:38Z",
       "createdAt": "2026-01-19T11:58:09Z",
       "urls": {
@@ -1597,7 +1597,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice-deepgram/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice-deepgram/commits/v0.1.0",
       "publishedAt": "2026-01-19T11:08:07Z",
       "createdAt": "2026-01-19T11:04:24Z",
       "urls": {
@@ -1619,7 +1619,7 @@
       "type": "release",
       "tagName": "v0.5.1",
       "name": "v0.5.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omniobserve/compare/v0.5.0...v0.5.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/omniobserve/compare/v0.5.0...v0.5.1",
       "publishedAt": "2026-01-19T10:34:18Z",
       "createdAt": "2026-01-19T10:29:09Z",
       "urls": {
@@ -1641,7 +1641,7 @@
       "type": "release",
       "tagName": "v0.6.0",
       "name": "v0.6.0",
-      "body": "**Release Notes**: [`v0.6.0`](https://agentplexus.dev/go-elevenlabs/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.5.0...v0.6.0",
+      "body": "**Release Notes**: [`v0.6.0`](https://plexusone.dev/go-elevenlabs/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.5.0...v0.6.0",
       "publishedAt": "2026-01-19T09:24:53Z",
       "createdAt": "2026-01-19T08:54:46Z",
       "urls": {
@@ -1663,7 +1663,7 @@
       "type": "release",
       "tagName": "v0.1.1",
       "name": "v0.1.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/ogen-tools/compare/v0.1.0...v0.1.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/ogen-tools/compare/v0.1.0...v0.1.1",
       "publishedAt": "2026-01-19T08:09:46Z",
       "createdAt": "2026-01-19T08:05:38Z",
       "urls": {
@@ -1685,7 +1685,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes**: [`v0.2.0`](https://agentplexus.dev/omnivoice/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes**: [`v0.2.0`](https://plexusone.dev/omnivoice/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-01-19T07:04:31Z",
       "createdAt": "2026-01-19T07:00:44Z",
       "urls": {
@@ -1707,7 +1707,7 @@
       "type": "release",
       "tagName": "v0.5.1",
       "name": "v0.5.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/release-agent-team/compare/v0.5.0...v0.5.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/release-agent-team/compare/v0.5.0...v0.5.1",
       "publishedAt": "2026-01-19T05:42:24Z",
       "createdAt": "2026-01-19T05:34:12Z",
       "urls": {
@@ -1729,7 +1729,7 @@
       "type": "release",
       "tagName": "v0.6.0",
       "name": "v0.6.0",
-      "body": "**Release Notes**: [`v0.6.0`](https://agentplexus.dev/assistantkit/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/assistantkit/compare/v0.5.0...v0.6.0",
+      "body": "**Release Notes**: [`v0.6.0`](https://plexusone.dev/assistantkit/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/assistantkit/compare/v0.5.0...v0.6.0",
       "publishedAt": "2026-01-19T05:04:19Z",
       "createdAt": "2026-01-19T05:00:44Z",
       "urls": {
@@ -1751,7 +1751,7 @@
       "type": "release",
       "tagName": "v0.2.1",
       "name": "v0.2.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnivault/compare/v0.2.0...v0.2.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnivault/compare/v0.2.0...v0.2.1",
       "publishedAt": "2026-01-19T03:58:29Z",
       "createdAt": "2026-01-19T03:53:56Z",
       "urls": {
@@ -1773,7 +1773,7 @@
       "type": "release",
       "tagName": "v0.3.1",
       "name": "v0.3.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/mcpkit/compare/v0.3.0...v0.3.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/mcpkit/compare/v0.3.0...v0.3.1",
       "publishedAt": "2026-01-19T01:12:48Z",
       "createdAt": "2026-01-19T01:07:29Z",
       "urls": {
@@ -1795,7 +1795,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/mcpkit/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes**: [`v0.3.0`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/mcpkit/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-01-19T00:48:27Z",
       "createdAt": "2026-01-19T00:41:20Z",
       "urls": {
@@ -1817,7 +1817,7 @@
       "type": "release",
       "tagName": "v0.5.0",
       "name": "v0.5.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/assistantkit/compare/v0.4.0...v0.5.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/assistantkit/compare/v0.4.0...v0.5.0",
       "publishedAt": "2026-01-18T23:29:24Z",
       "createdAt": "2026-01-18T23:27:41Z",
       "urls": {
@@ -1839,7 +1839,7 @@
       "type": "release",
       "tagName": "v0.6.0",
       "name": "v0.6.0",
-      "body": "**Release Notes**: [`v0.6.0`](https://agentplexus.dev/stats-agent-team/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/stats-agent-team/compare/v0.5.1...v0.6.0",
+      "body": "**Release Notes**: [`v0.6.0`](https://plexusone.dev/stats-agent-team/releases/v0.6.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/stats-agent-team/compare/v0.5.1...v0.6.0",
       "publishedAt": "2026-01-18T19:11:34Z",
       "createdAt": "2026-01-18T18:59:55Z",
       "urls": {
@@ -1861,7 +1861,7 @@
       "type": "release",
       "tagName": "v0.5.0",
       "name": "v0.5.0",
-      "body": "## Release v0.5.0\n\ndocs: update changelog for v0.5.0\n\n## Changelog\n### Features\n* d72d66813edd3fd4b50c5890df745ef0b15ab918: feat(report): add DAG dependency tracking for team ordering (@grokify)\n* 9011cac8f49ec29a5a87e4d3ab04e3a2f2d77019: feat(workflow): make release-validation depend on all validation steps (@grokify)\n* 5fc0e7262cc5be98fb7901e3f89fcc440d0294b2: feat: add PM validation and multi-agent IR for v0.5.0 (@grokify)\n* 734385fc6497a8f54745327f01646eff064b745f: feat: add team spec loader and improve report header (@grokify)\n### Bug Fixes\n* 1c8adae927ad411cc7e62aa7a3879aad01c51d62: fix(docs): add missing PM → Release edge in DAG diagram (@grokify)\n* 187b71f0c639b40675d4224a49bf7aea72cba44c: fix(docs): use darker text colors in DAG diagram for dark mode (@grokify)\n* 19d086378fabae88078ad534164d2059efac8cfa: fix(security): exclude security.go from hardcoded secrets scan (@grokify)\n### Refactoring\n* cfa5497e69238e278c99b5d396c211b7819f505f: refactor(report): use multiagentspec types from multi-agent-spec SDK (@grokify)\n* be6a15a44ce997f2303a2643070e9751ab6a4ad3: refactor: consolidate agent/team/deployment specs under specs/ directory (@grokify)\n* 9f8b2c0ae769b9caa5f823fc281ff1d4756679cc: refactor: update to multi-agent-spec SDK v0.2.0 (@grokify)\n* e3ff5ef52380dace94c1f33f494f9f6e6410587e: refactor: update to multi-agent-spec SDK v0.3.0 (@grokify)\n### Other\n* e0f5e7868ab89ed011ebf96ecce94c6c50bd71fb: docs(README.md): fix formatting (@grokify)\n* d35d8be63ad02a7b00388fe2987e1b53df5bd05a: docs(multi): update to name as \"Release Agent Team\" (@grokify)\n* 5c2e958b6157123a5e5474ec81e62a4abf551976: test(report): update tests to use multiagentspec types (@grokify)\n\n---\n\n**Full Changelog**: https://github.com/agentplexus/release-agent-team/compare/v0.4.0...v0.5.0\n\n### Installation\n\n```bash\n# Go install\ngo install github.com/agentplexus/release-agent-team/cmd/releaseagent@v0.5.0\n\n# Homebrew (macOS/Linux)\nbrew install agentplexus/tap/release-agent-team\n```\n\n",
+      "body": "## Release v0.5.0\n\ndocs: update changelog for v0.5.0\n\n## Changelog\n### Features\n* d72d66813edd3fd4b50c5890df745ef0b15ab918: feat(report): add DAG dependency tracking for team ordering (@grokify)\n* 9011cac8f49ec29a5a87e4d3ab04e3a2f2d77019: feat(workflow): make release-validation depend on all validation steps (@grokify)\n* 5fc0e7262cc5be98fb7901e3f89fcc440d0294b2: feat: add PM validation and multi-agent IR for v0.5.0 (@grokify)\n* 734385fc6497a8f54745327f01646eff064b745f: feat: add team spec loader and improve report header (@grokify)\n### Bug Fixes\n* 1c8adae927ad411cc7e62aa7a3879aad01c51d62: fix(docs): add missing PM → Release edge in DAG diagram (@grokify)\n* 187b71f0c639b40675d4224a49bf7aea72cba44c: fix(docs): use darker text colors in DAG diagram for dark mode (@grokify)\n* 19d086378fabae88078ad534164d2059efac8cfa: fix(security): exclude security.go from hardcoded secrets scan (@grokify)\n### Refactoring\n* cfa5497e69238e278c99b5d396c211b7819f505f: refactor(report): use multiagentspec types from multi-agent-spec SDK (@grokify)\n* be6a15a44ce997f2303a2643070e9751ab6a4ad3: refactor: consolidate agent/team/deployment specs under specs/ directory (@grokify)\n* 9f8b2c0ae769b9caa5f823fc281ff1d4756679cc: refactor: update to multi-agent-spec SDK v0.2.0 (@grokify)\n* e3ff5ef52380dace94c1f33f494f9f6e6410587e: refactor: update to multi-agent-spec SDK v0.3.0 (@grokify)\n### Other\n* e0f5e7868ab89ed011ebf96ecce94c6c50bd71fb: docs(README.md): fix formatting (@grokify)\n* d35d8be63ad02a7b00388fe2987e1b53df5bd05a: docs(multi): update to name as \"Release Agent Team\" (@grokify)\n* 5c2e958b6157123a5e5474ec81e62a4abf551976: test(report): update tests to use multiagentspec types (@grokify)\n\n---\n\n**Full Changelog**: https://github.com/plexusone/release-agent-team/compare/v0.4.0...v0.5.0\n\n### Installation\n\n```bash\n# Go install\ngo install github.com/plexusone/release-agent-team/cmd/releaseagent@v0.5.0\n\n# Homebrew (macOS/Linux)\nbrew install agentplexus/tap/release-agent-team\n```\n\n",
       "publishedAt": "2026-01-18T09:57:10Z",
       "createdAt": "2026-01-18T09:50:28Z",
       "urls": {
@@ -1927,7 +1927,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Release Notes**: [`v0.4.0`](https://agentplexus.dev/release-agent-team/releases/v0.4.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/release-agent-team/compare/v0.3.0...v0.4.0",
+      "body": "**Release Notes**: [`v0.4.0`](https://plexusone.dev/release-agent-team/releases/v0.4.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/release-agent-team/compare/v0.3.0...v0.4.0",
       "publishedAt": "2026-01-18T00:00:31Z",
       "createdAt": "2026-01-17T23:56:19Z",
       "urls": {
@@ -1949,7 +1949,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Release Notes**: [`v0.4.0`](https://agentplexus.dev/aiassistkit/releases/v0.4.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/aiassistkit/compare/v0.3.0...v0.4.0",
+      "body": "**Release Notes**: [`v0.4.0`](https://plexusone.dev/aiassistkit/releases/v0.4.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/aiassistkit/compare/v0.3.0...v0.4.0",
       "publishedAt": "2026-01-17T19:55:43Z",
       "createdAt": "2026-01-17T19:49:42Z",
       "urls": {
@@ -1971,7 +1971,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/multi-agent-spec/commits/v0.1.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/multi-agent-spec/commits/v0.1.0",
       "publishedAt": "2026-01-17T19:22:20Z",
       "createdAt": "2026-01-17T19:18:39Z",
       "urls": {
@@ -2037,7 +2037,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes**: [`v0.3.0`](https://agentplexus.dev/release-agent-team/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/grokify/release-agent/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes**: [`v0.3.0`](https://plexusone.dev/release-agent-team/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/grokify/release-agent/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-01-12T10:55:34Z",
       "createdAt": "2026-01-12T10:49:26Z",
       "urls": {
@@ -2103,7 +2103,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes**: [`v0.2.0`](https://agentplexus.dev/omnivault/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivault/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes**: [`v0.2.0`](https://plexusone.dev/omnivault/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivault/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-01-11T10:02:54Z",
       "createdAt": "2026-01-11T09:59:43Z",
       "urls": {
@@ -2147,7 +2147,7 @@
       "type": "release",
       "tagName": "v0.11.0",
       "name": "v0.11.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.11.0.md`](RELEASE_NOTES_v0.11.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnillm/compare/v0.10.0...v0.11.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.11.0.md`](RELEASE_NOTES_v0.11.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnillm/compare/v0.10.0...v0.11.0",
       "publishedAt": "2026-01-10T23:03:11Z",
       "createdAt": "2026-01-10T22:51:08Z",
       "urls": {
@@ -2169,7 +2169,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.3.0.md`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentkit/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.3.0.md`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentkit/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-01-05T03:58:33Z",
       "createdAt": "2026-01-05T03:52:58Z",
       "urls": {
@@ -2191,7 +2191,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes** [`v0.2.0`](https://agentplexus.dev/release-agent-team/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/grokify/prepush/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes** [`v0.2.0`](https://plexusone.dev/release-agent-team/releases/v0.2.0/)\r\n\r\n**Full Changelog**: https://github.com/grokify/prepush/compare/v0.1.0...v0.2.0",
       "publishedAt": "2026-01-05T03:48:02Z",
       "createdAt": "2026-01-05T03:42:00Z",
       "urls": {
@@ -2213,7 +2213,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](https://agentplexus.dev/release-agent-team/releases/v0.1.0/)\r\n\r\n**Full Changelog**: https://github.com/grokify/prepush/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](https://plexusone.dev/release-agent-team/releases/v0.1.0/)\r\n\r\n**Full Changelog**: https://github.com/grokify/prepush/commits/v0.1.0",
       "publishedAt": "2026-01-04T22:57:54Z",
       "createdAt": "2026-01-04T22:56:09Z",
       "urls": {
@@ -2235,7 +2235,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.3.0.md`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnillm-bedrock/compare/v0.2.0...v0.3.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.3.0.md`](RELEASE_NOTES_v0.3.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnillm-bedrock/compare/v0.2.0...v0.3.0",
       "publishedAt": "2026-01-04T21:27:43Z",
       "createdAt": "2026-01-04T21:17:16Z",
       "urls": {
@@ -2257,7 +2257,7 @@
       "type": "release",
       "tagName": "v0.5.1",
       "name": "v0.5.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/stats-agent-team/compare/v0.5.0...v0.5.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/stats-agent-team/compare/v0.5.0...v0.5.1",
       "publishedAt": "2026-01-04T12:30:34Z",
       "createdAt": "2026-01-04T12:28:09Z",
       "urls": {
@@ -2279,7 +2279,7 @@
       "type": "release",
       "tagName": "v0.5.0",
       "name": "v0.5.0",
-      "body": "**Release Notes**: [v0.5.0](https://github.com/agentplexus/stats-agent-team/blob/main/docsrc/releases/v0.5.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/stats-agent-team/compare/v0.4.0...v0.5.0",
+      "body": "**Release Notes**: [v0.5.0](https://github.com/plexusone/stats-agent-team/blob/main/docsrc/releases/v0.5.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/stats-agent-team/compare/v0.4.0...v0.5.0",
       "publishedAt": "2026-01-04T12:23:02Z",
       "createdAt": "2026-01-04T12:17:08Z",
       "urls": {
@@ -2301,7 +2301,7 @@
       "type": "release",
       "tagName": "v0.10.0",
       "name": "v0.10.0",
-      "body": "**Release Notes** [`RELEASE_NOTES_v0.10.0.md`](RELEASE_NOTES_v0.10.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnillm/compare/v0.9.0...v0.10.0",
+      "body": "**Release Notes** [`RELEASE_NOTES_v0.10.0.md`](RELEASE_NOTES_v0.10.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnillm/compare/v0.9.0...v0.10.0",
       "publishedAt": "2026-01-04T11:40:06Z",
       "createdAt": "2026-01-04T11:29:12Z",
       "urls": {
@@ -2323,7 +2323,7 @@
       "type": "release",
       "tagName": "v0.5.0",
       "name": "v0.5.0",
-      "body": "**Release Notes**: [`https://agentplexus.dev/go-elevenlabs/releases/v0.5.0/`](https://agentplexus.dev/go-elevenlabs/releases/v0.5.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.4.0...v0.5.0",
+      "body": "**Release Notes**: [`https://plexusone.dev/go-elevenlabs/releases/v0.5.0/`](https://plexusone.dev/go-elevenlabs/releases/v0.5.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.4.0...v0.5.0",
       "publishedAt": "2026-01-04T08:21:09Z",
       "createdAt": "2026-01-04T08:16:05Z",
       "urls": {
@@ -2345,7 +2345,7 @@
       "type": "release",
       "tagName": "v0.5.0",
       "name": "v0.5.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.5.0.md`](RELEASE_NOTES_v0.5.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omniobserve/compare/v0.4.0...v0.5.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.5.0.md`](RELEASE_NOTES_v0.5.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omniobserve/compare/v0.4.0...v0.5.0",
       "publishedAt": "2026-01-03T21:54:39Z",
       "createdAt": "2026-01-03T21:45:38Z",
       "urls": {
@@ -2367,7 +2367,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentkit-aws-pulumi/commits/v0.1.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentkit-aws-pulumi/commits/v0.1.0",
       "publishedAt": "2025-12-31T17:11:52Z",
       "createdAt": "2025-12-31T17:06:16Z",
       "urls": {
@@ -2389,7 +2389,7 @@
       "type": "release",
       "tagName": "v0.1.1",
       "name": "v0.1.1",
-      "body": "**Full Changelog**: https://github.com/agentplexus/agentkit-aws-cdk/compare/v0.1.0...v0.1.1",
+      "body": "**Full Changelog**: https://github.com/plexusone/agentkit-aws-cdk/compare/v0.1.0...v0.1.1",
       "publishedAt": "2025-12-31T17:05:35Z",
       "createdAt": "2025-12-31T16:51:10Z",
       "urls": {
@@ -2411,7 +2411,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentkit-aws-cdk/commits/v0.1.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentkit-aws-cdk/commits/v0.1.0",
       "publishedAt": "2025-12-31T16:49:44Z",
       "createdAt": "2025-12-31T16:44:59Z",
       "urls": {
@@ -2433,7 +2433,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.2.0.md`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentkit/compare/v0.1.0...v0.2.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.2.0.md`](RELEASE_NOTES_v0.2.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentkit/compare/v0.1.0...v0.2.0",
       "publishedAt": "2025-12-31T16:35:24Z",
       "createdAt": "2025-12-31T16:30:59Z",
       "urls": {
@@ -2455,7 +2455,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Release Notes**: [`docsrc/releases/v0.4.0.md`](https://github.com/agentplexus/go-elevenlabs/blob/main/docsrc/releases/v0.4.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.3.0...v0.4.0",
+      "body": "**Release Notes**: [`docsrc/releases/v0.4.0.md`](https://github.com/plexusone/go-elevenlabs/blob/main/docsrc/releases/v0.4.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.3.0...v0.4.0",
       "publishedAt": "2025-12-31T12:42:18Z",
       "createdAt": "2025-12-31T12:36:22Z",
       "urls": {
@@ -2477,7 +2477,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/ogen-tools/commits/v0.1.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/ogen-tools/commits/v0.1.0",
       "publishedAt": "2025-12-31T12:25:01Z",
       "createdAt": "2025-12-31T11:47:39Z",
       "urls": {
@@ -2499,7 +2499,7 @@
       "type": "release",
       "tagName": "v0.7.0",
       "name": "v0.7.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omniserp/compare/v0.6.0...v0.7.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/omniserp/compare/v0.6.0...v0.7.0",
       "publishedAt": "2025-12-29T15:20:12Z",
       "createdAt": "2025-12-29T15:16:57Z",
       "urls": {
@@ -2521,7 +2521,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/mcp-confluence/commits/v0.1.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/mcp-confluence/commits/v0.1.0",
       "publishedAt": "2025-12-29T13:58:48Z",
       "createdAt": "2025-12-29T13:55:08Z",
       "urls": {
@@ -2543,7 +2543,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/agentkit/commits/v0.1.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/agentkit/commits/v0.1.0",
       "publishedAt": "2025-12-29T11:10:38Z",
       "createdAt": "2025-12-29T11:04:57Z",
       "urls": {
@@ -2565,7 +2565,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](https://agentplexus.dev/omnivoice/releases/v0.1.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivoice/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](https://plexusone.dev/omnivoice/releases/v0.1.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivoice/commits/v0.1.0",
       "publishedAt": "2025-12-28T15:02:59Z",
       "createdAt": "2025-12-28T14:46:42Z",
       "urls": {
@@ -2587,7 +2587,7 @@
       "type": "release",
       "tagName": "v0.3.0",
       "name": "v0.3.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.2.0...v0.3.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.2.0...v0.3.0",
       "publishedAt": "2025-12-28T13:00:49Z",
       "createdAt": "2025-12-28T12:43:58Z",
       "urls": {
@@ -2609,7 +2609,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/go-elevenlabs/compare/v0.1.0...v0.2.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/go-elevenlabs/compare/v0.1.0...v0.2.0",
       "publishedAt": "2025-12-28T11:18:54Z",
       "createdAt": "2025-12-28T05:53:15Z",
       "urls": {
@@ -2631,7 +2631,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnivault-keyring/commits/v0.1.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnivault-keyring/commits/v0.1.0",
       "publishedAt": "2025-12-28T04:32:19Z",
       "createdAt": "2025-12-28T04:16:53Z",
       "urls": {
@@ -2653,7 +2653,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Release Notes**: [`v0.1.0`](https://agentplexus.dev/omnivault/releases/v0.1.0/)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnivault/commits/v0.1.0",
+      "body": "**Release Notes**: [`v0.1.0`](https://plexusone.dev/omnivault/releases/v0.1.0/)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnivault/commits/v0.1.0",
       "publishedAt": "2025-12-27T22:58:40Z",
       "createdAt": "2025-12-27T22:55:41Z",
       "urls": {
@@ -2675,7 +2675,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/stats-agent-team/compare/v0.3.0...v0.4.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/stats-agent-team/compare/v0.3.0...v0.4.0",
       "publishedAt": "2025-12-27T21:14:21Z",
       "createdAt": "2025-12-27T21:09:03Z",
       "urls": {
@@ -2697,7 +2697,7 @@
       "type": "release",
       "tagName": "v0.4.0",
       "name": "v0.4.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omniobserve/compare/v0.3.0...v0.4.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/omniobserve/compare/v0.3.0...v0.4.0",
       "publishedAt": "2025-12-27T10:49:51Z",
       "createdAt": "2025-12-27T10:44:24Z",
       "urls": {
@@ -2719,7 +2719,7 @@
       "type": "release",
       "tagName": "v0.6.0",
       "name": "v0.6.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omniserp/compare/v0.5.0...v0.6.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/omniserp/compare/v0.5.0...v0.6.0",
       "publishedAt": "2025-12-27T08:56:46Z",
       "createdAt": "2025-12-27T08:52:08Z",
       "urls": {
@@ -2741,7 +2741,7 @@
       "type": "release",
       "tagName": "v0.2.0",
       "name": "v0.2.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnillm-bedrock/compare/v0.1.0...v0.2.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnillm-bedrock/compare/v0.1.0...v0.2.0",
       "publishedAt": "2025-12-27T08:47:19Z",
       "createdAt": "2025-12-27T08:43:25Z",
       "urls": {
@@ -2763,7 +2763,7 @@
       "type": "release",
       "tagName": "v0.1.0",
       "name": "v0.1.0",
-      "body": "**Full Changelog**: https://github.com/agentplexus/omnillm-bedrock/commits/v0.1.0",
+      "body": "**Full Changelog**: https://github.com/plexusone/omnillm-bedrock/commits/v0.1.0",
       "publishedAt": "2025-12-27T08:40:46Z",
       "createdAt": "2025-12-21T19:18:43Z",
       "urls": {
@@ -2785,7 +2785,7 @@
       "type": "release",
       "tagName": "v0.9.0",
       "name": "v0.9.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.9.0.md`](https://github.com/agentplexus/omnillm/blob/main/RELEASE_NOTES_v0.9.0.md)\r\n\r\n**Full Changelog**: https://github.com/agentplexus/omnillm/compare/v0.8.0...v0.9.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.9.0.md`](https://github.com/plexusone/omnillm/blob/main/RELEASE_NOTES_v0.9.0.md)\r\n\r\n**Full Changelog**: https://github.com/plexusone/omnillm/compare/v0.8.0...v0.9.0",
       "publishedAt": "2025-12-27T08:19:00Z",
       "createdAt": "2025-12-27T08:15:10Z",
       "urls": {
@@ -2851,7 +2851,7 @@
       "type": "release",
       "tagName": "v0.8.0",
       "name": "v0.8.0",
-      "body": "**Release Notes**: [`RELEASE_NOTES_v0.8.0.md`](https://github.com/agentplexus/omnillm/blob/main/RELEASE_NOTES_v0.8.0.md)\r\n\r\n**Full Changelog**: https://github.com/grokify/metallm/compare/v0.7.1...v0.8.0",
+      "body": "**Release Notes**: [`RELEASE_NOTES_v0.8.0.md`](https://github.com/plexusone/omnillm/blob/main/RELEASE_NOTES_v0.8.0.md)\r\n\r\n**Full Changelog**: https://github.com/grokify/metallm/compare/v0.7.1...v0.8.0",
       "publishedAt": "2025-12-22T06:05:54Z",
       "createdAt": "2025-12-22T05:45:55Z",
       "urls": {
@@ -3371,7 +3371,7 @@
       "plexusone/agentkit-aws-cdk": 3,
       "plexusone/agentkit-aws-pulumi": 1,
       "plexusone/agentplexus": 1,
-      "plexusone/agentplexus.github.io": 2,
+      "plexusone/plexusone.github.io": 2,
       "plexusone/assistantkit": 10,
       "plexusone/design-system-spec": 4,
       "plexusone/elevenlabs-go": 11,
