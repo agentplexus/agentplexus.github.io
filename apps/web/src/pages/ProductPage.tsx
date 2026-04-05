@@ -417,7 +417,7 @@ const products: Product[] = [
       'A specification format for defining AI agents, skills, and commands using Markdown with YAML frontmatter. Write once, deploy to Claude Code, Kiro CLI, and other platforms via AssistantKit.',
     color: 'violet',
     githubUrl: 'https://github.com/plexusone/multi-agent-spec',
-    docsUrl: 'https://github.com/plexusone/multi-agent-spec/blob/main/README.md',
+    docsUrl: 'https://plexusone.dev/multi-agent-spec/',
     features: [
       'YAML frontmatter for agent configuration',
       'Markdown body for system prompts',
