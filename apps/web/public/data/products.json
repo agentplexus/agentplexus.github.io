@@ -233,22 +233,22 @@
       "integrations": ["claude-code", "kiro"]
     },
     {
-      "name": "PlexusOne Desktop",
+      "name": "PlexusOne App",
       "slug": "plexusone-app",
-      "tagline": "macOS Desktop App",
-      "description": "Native macOS desktop application for PlexusOne. Unified interface for AI agents, LLM providers, and development tools.",
+      "tagline": "macOS Tiling Window Manager",
+      "description": "macOS tiling window manager for coding agents. Organize your AI development workspace with intelligent window management.",
       "category": "application",
       "status": "stable",
       "color": "purple",
       "featured": true,
       "features": [
+        "Tiling window management",
+        "Agent workspace organization",
         "Native macOS experience",
-        "Agent management",
-        "LLM provider switching",
         "Local-first architecture"
       ],
       "githubUrl": "https://github.com/plexusone/plexusone-app",
-      "docsUrl": null,
+      "docsUrl": "https://github.com/plexusone/plexusone-app",
       "integrations": ["macos", "omnillm", "omniagent"]
     },
     {
