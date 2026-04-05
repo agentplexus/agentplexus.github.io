@@ -18,8 +18,8 @@ export function Hero() {
         />
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          <span className="text-white">Plexus</span>
-          <span className="gradient-text">One</span>
+          <span className="gradient-text">Plexus</span>
+          <span className="text-white">One</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-4">

@@ -481,7 +481,7 @@
           <a href="${BASE_URL}/" class="plexus-nav-brand">
             <img src="${BASE_URL}/icon.png" alt="PlexusOne" class="plexus-nav-logo">
             <span class="plexus-nav-title">
-              <span class="plexus-nav-title-light">Plexus</span><span class="plexus-nav-title-gradient">One</span>
+              <span class="plexus-nav-title-gradient">Plexus</span><span class="plexus-nav-title-light">One</span>
             </span>
           </a>
 
