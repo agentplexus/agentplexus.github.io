@@ -1,6 +1,6 @@
-# AgentPlexus.dev
+# PlexusOne.dev
 
-Source code for the [AgentPlexus.dev](https://agentplexus.dev) website.
+Source code for the [PlexusOne.dev](https://plexusone.dev) website.
 
 ## Tech Stack
 
