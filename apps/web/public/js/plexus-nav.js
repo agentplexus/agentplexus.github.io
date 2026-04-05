@@ -97,7 +97,7 @@
       }
 
       .plexus-nav-title {
-        font-size: 1.25rem;
+        font-size: 20px;
         font-weight: 700;
       }
 
@@ -127,15 +127,15 @@
       .plexus-nav-link {
         color: #d1d5db;
         text-decoration: none;
-        font-size: 0.875rem;
+        font-size: 14px;
         font-weight: 500;
-        padding: 0.5rem 0;
+        padding: 8px 0;
         border: none;
         background: none;
         cursor: pointer;
         display: inline-flex;
         align-items: center;
-        gap: 0.25rem;
+        gap: 4px;
         transition: color 0.15s ease;
         border-radius: 4px;
       }
@@ -190,10 +190,10 @@
 
       .plexus-nav-dropdown-item {
         display: block;
-        padding: 0.5rem 1rem;
+        padding: 8px 16px;
         color: #d1d5db;
         text-decoration: none;
-        font-size: 0.875rem;
+        font-size: 14px;
         transition: color 0.15s ease, background 0.15s ease;
       }
 
@@ -206,14 +206,14 @@
       .plexus-nav-github {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 1rem;
+        gap: 8px;
+        padding: 8px 16px;
         background: rgba(139, 92, 246, 0.2);
         border: 1px solid rgba(139, 92, 246, 0.5);
         border-radius: 8px;
         color: #a78bfa;
         text-decoration: none;
-        font-size: 0.875rem;
+        font-size: 14px;
         font-weight: 500;
         transition: background 0.15s ease;
       }
@@ -289,20 +289,20 @@
 
       .plexus-nav-mobile-label {
         display: block;
-        font-size: 0.75rem;
+        font-size: 12px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: #6b7280;
-        margin-bottom: 0.5rem;
+        margin-bottom: 8px;
       }
 
       .plexus-nav-mobile-link {
         display: block;
-        padding: 0.5rem 0;
+        padding: 8px 0;
         color: #d1d5db;
         text-decoration: none;
-        font-size: 0.875rem;
+        font-size: 14px;
         transition: color 0.15s ease;
       }
 
@@ -318,7 +318,7 @@
       }
 
       .plexus-nav-mobile-more {
-        font-size: 0.75rem;
+        font-size: 12px;
         color: #06b6d4;
       }
 
@@ -366,18 +366,18 @@
       }
 
       .plexus-megamenu-category h3 {
-        font-size: 0.75rem;
+        font-size: 12px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: #fff;
-        margin: 0 0 0.25rem 0;
+        margin: 0 0 4px 0;
       }
 
       .plexus-megamenu-category .plexus-megamenu-desc {
-        font-size: 0.7rem;
+        font-size: 11px;
         color: #6b7280;
-        margin: 0 0 1rem 0;
+        margin: 0 0 16px 0;
       }
 
       .plexus-megamenu-category ul {
@@ -397,7 +397,7 @@
       }
 
       .plexus-megamenu-category li a .product-name {
-        font-size: 0.875rem;
+        font-size: 14px;
         font-weight: 500;
         color: #e5e7eb;
       }
@@ -407,9 +407,9 @@
       }
 
       .plexus-megamenu-category li a .product-tagline {
-        font-size: 0.7rem;
+        font-size: 11px;
         color: #6b7280;
-        margin-top: 0.125rem;
+        margin-top: 2px;
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
@@ -419,9 +419,9 @@
       .plexus-megamenu-more {
         display: inline-flex;
         align-items: center;
-        gap: 0.25rem;
-        margin-top: 0.75rem;
-        font-size: 0.7rem;
+        gap: 4px;
+        margin-top: 12px;
+        font-size: 11px;
         color: #06b6d4;
         text-decoration: none;
         transition: color 0.15s;
@@ -450,7 +450,7 @@
       }
 
       .plexus-megamenu-footer-links a {
-        font-size: 0.875rem;
+        font-size: 14px;
         color: #9ca3af;
         text-decoration: none;
         transition: color 0.15s;
@@ -461,7 +461,7 @@
       }
 
       .plexus-megamenu-stats {
-        font-size: 0.75rem;
+        font-size: 12px;
         color: #4b5563;
       }
 
