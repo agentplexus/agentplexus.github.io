@@ -233,6 +233,7 @@ const products: Product[] = [
       'Unified API for speech-to-text and text-to-speech. Currently supports ElevenLabs and Twilio, with more providers coming soon.',
     color: 'violet',
     githubUrl: 'https://github.com/plexusone/omnivoice',
+    docsUrl: 'https://plexusone.dev/omnivoice/',
     presentationUrl: 'https://plexusone.dev/omnivoice-core/presentation.html',
     features: [
       'ElevenLabs text-to-speech integration',
@@ -365,6 +366,7 @@ const products: Product[] = [
       'Native macOS desktop application for PlexusOne. Unified interface for AI agents, LLM providers, and development tools with a local-first architecture.',
     color: 'purple',
     githubUrl: 'https://github.com/plexusone/plexusone-app',
+    docsUrl: 'https://github.com/plexusone/plexusone-app',
     features: [
       'Native macOS experience',
       'Agent management interface',
