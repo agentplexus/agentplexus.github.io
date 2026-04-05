@@ -188,9 +188,13 @@
 }
 
 /* Search - Dark Mode */
-[data-md-color-scheme="slate"] .md-search__input {
+[data-md-color-scheme="slate"] .md-search__form {
   background-color: #1e293b;
   border: 1px solid #334155;
+}
+
+[data-md-color-scheme="slate"] .md-search__input {
+  background-color: transparent;
   color: #f1f5f9;
 }
 
@@ -202,14 +206,52 @@
   color: #94a3b8;
 }
 
+[data-md-color-scheme="slate"] .md-search__icon svg {
+  fill: #94a3b8;
+}
+
 [data-md-color-scheme="slate"] .md-search__icon:hover {
   color: #f1f5f9;
 }
 
+[data-md-color-scheme="slate"] .md-search__icon:hover svg {
+  fill: #f1f5f9;
+}
+
+/* Search results - Dark Mode */
+[data-md-color-scheme="slate"] .md-search__output {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__link {
+  color: #f1f5f9;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__link:hover {
+  background-color: #1e293b;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__article {
+  background-color: transparent;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__title {
+  color: #f1f5f9;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__teaser {
+  color: #94a3b8;
+}
+
 /* Search - Light Mode */
-[data-md-color-scheme="default"] .md-search__input {
+[data-md-color-scheme="default"] .md-search__form {
   background-color: #f1f5f9;
   border: 1px solid #cbd5e1;
+}
+
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: transparent;
   color: #1e293b;
 }
 
@@ -221,8 +263,16 @@
   color: #64748b;
 }
 
+[data-md-color-scheme="default"] .md-search__icon svg {
+  fill: #64748b;
+}
+
 [data-md-color-scheme="default"] .md-search__icon:hover {
   color: #1e293b;
+}
+
+[data-md-color-scheme="default"] .md-search__icon:hover svg {
+  fill: #1e293b;
 }
 
 /* Tabs */
