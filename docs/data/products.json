@@ -35,7 +35,6 @@
       "category": "library",
       "status": "stable",
       "color": "purple",
-      "featured": true,
       "features": [
         "Environment, file, and keyring providers",
         "AWS Secrets Manager and Parameter Store",
@@ -45,25 +44,6 @@
       "githubUrl": "https://github.com/plexusone/omnivault",
       "docsUrl": "/omnivault",
       "integrations": ["aws", "macos", "windows", "linux"]
-    },
-    {
-      "name": "OmniSerp",
-      "slug": "omniserp",
-      "tagline": "Multi-Provider Search Abstraction",
-      "description": "Unified search API for multiple providers. Query Serper, SerpAPI, or other search backends with a consistent interface.",
-      "category": "library",
-      "status": "stable",
-      "color": "pink",
-      "featured": true,
-      "features": [
-        "Web search across providers",
-        "News, images, and video search",
-        "Structured result parsing",
-        "Rate limiting and caching"
-      ],
-      "githubUrl": "https://github.com/plexusone/omniserp",
-      "docsUrl": "/omniserp",
-      "integrations": ["serper", "serpapi"]
     },
     {
       "name": "OmniObserve",
@@ -85,6 +65,25 @@
       "integrations": ["opik", "langfuse", "phoenix"]
     },
     {
+      "name": "OmniSerp",
+      "slug": "omniserp",
+      "tagline": "Multi-Provider Search Abstraction",
+      "description": "Unified search API for multiple providers. Query Serper, SerpAPI, or other search backends with a consistent interface.",
+      "category": "library",
+      "status": "stable",
+      "color": "pink",
+      "featured": true,
+      "features": [
+        "Web search across providers",
+        "News, images, and video search",
+        "Structured result parsing",
+        "Rate limiting and caching"
+      ],
+      "githubUrl": "https://github.com/plexusone/omniserp",
+      "docsUrl": "/omniserp",
+      "integrations": ["serper", "serpapi"]
+    },
+    {
       "name": "OmniVoice",
       "slug": "omnivoice",
       "tagline": "Multi-Provider Voice & Audio",
@@ -92,6 +91,7 @@
       "category": "library",
       "status": "beta",
       "color": "violet",
+      "featured": true,
       "features": [
         "Deepgram STT integration",
         "ElevenLabs TTS integration",
@@ -186,7 +186,6 @@
       "category": "library",
       "status": "stable",
       "color": "pink",
-      "featured": true,
       "features": [
         "Base agent with LLM integration",
         "AWS Bedrock AgentCore support",
@@ -223,7 +222,6 @@
       "category": "library",
       "status": "stable",
       "color": "cyan",
-      "featured": true,
       "features": [
         "Generate Claude Code subagents",
         "Generate Kiro CLI plugins",
