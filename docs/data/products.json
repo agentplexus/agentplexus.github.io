@@ -233,7 +233,7 @@
       "integrations": ["claude-code", "kiro"]
     },
     {
-      "name": "PlexusOne App",
+      "name": "PlexusOne Desktop",
       "slug": "plexusone-app",
       "tagline": "macOS Desktop App",
       "description": "Native macOS desktop application for PlexusOne. Unified interface for AI agents, LLM providers, and development tools.",
@@ -435,22 +435,22 @@
       "integrations": []
     },
     {
-      "name": "Design System Spec",
-      "slug": "design-system-spec",
-      "tagline": "UI/UX Design System",
-      "description": "PlexusOne design system specification with tokens, components, and patterns.",
+      "name": "Multi-Agent Spec",
+      "slug": "multi-agent-spec",
+      "tagline": "Multi-Agent Systems Spec",
+      "description": "Specification for building multi-agent AI systems with PlexusOne libraries.",
       "category": "specification",
       "status": "stable",
-      "color": "purple",
+      "color": "violet",
       "featured": true,
       "features": [
-        "Design tokens",
-        "Component specs",
-        "Accessibility guidelines",
-        "Theme generation"
+        "Agent definitions",
+        "Communication protocols",
+        "Orchestration patterns",
+        "Deployment models"
       ],
-      "githubUrl": "https://github.com/plexusone/design-system-spec",
-      "docsUrl": "/design-system-spec",
+      "githubUrl": "https://github.com/plexusone/multi-agent-spec",
+      "docsUrl": "/multi-agent-spec",
       "integrations": []
     },
     {
@@ -473,22 +473,22 @@
       "integrations": []
     },
     {
-      "name": "Multi-Agent Spec",
-      "slug": "multi-agent-spec",
-      "tagline": "Multi-Agent Systems Spec",
-      "description": "Specification for building multi-agent AI systems with PlexusOne libraries.",
+      "name": "Design System Spec",
+      "slug": "design-system-spec",
+      "tagline": "UI/UX Design System",
+      "description": "PlexusOne design system specification with tokens, components, and patterns.",
       "category": "specification",
       "status": "stable",
-      "color": "violet",
+      "color": "purple",
       "featured": true,
       "features": [
-        "Agent definitions",
-        "Communication protocols",
-        "Orchestration patterns",
-        "Deployment models"
+        "Design tokens",
+        "Component specs",
+        "Accessibility guidelines",
+        "Theme generation"
       ],
-      "githubUrl": "https://github.com/plexusone/multi-agent-spec",
-      "docsUrl": "/multi-agent-spec",
+      "githubUrl": "https://github.com/plexusone/design-system-spec",
+      "docsUrl": "/design-system-spec",
       "integrations": []
     }
   ],
