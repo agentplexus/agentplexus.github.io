@@ -21,6 +21,8 @@ import { AcademyPage } from './pages/AcademyPage'
 import { AcademyCoursePage } from './pages/AcademyCoursePage'
 import { SpecificationsPage } from './pages/SpecificationsPage'
 import { ApplicationsPage } from './pages/ApplicationsPage'
+import { LibrariesPage } from './pages/LibrariesPage'
+import { AgentsPage } from './pages/AgentsPage'
 
 // Handle redirects from 404.html for GitHub Pages SPA support
 function RedirectHandler() {
@@ -62,8 +64,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/integrations" element={<IntegrationsPage />} />
             {/* Category list pages */}
-            <Route path="/libraries" element={<ProductPage />} />
-            <Route path="/agents" element={<ProductPage />} />
+            <Route path="/libraries" element={<LibrariesPage />} />
+            <Route path="/agents" element={<AgentsPage />} />
             <Route path="/specifications" element={<SpecificationsPage />} />
             <Route path="/applications" element={<ApplicationsPage />} />
             {/* Individual product pages by category */}
