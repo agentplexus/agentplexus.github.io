@@ -1,11 +1,51 @@
 {
-  "ir_version": "1.0",
-  "project": "agentplexus.github.io",
-  "repository": "https://github.com/agentplexus/agentplexus.github.io",
+  "irVersion": "1.0",
+  "project": "plexusone.github.io",
+  "repository": "https://github.com/plexusone/plexusone.github.io",
   "versioning": "semver",
-  "commit_convention": "conventional",
-  "maintainers": ["agentplexus"],
+  "commitConvention": "conventional",
+  "maintainers": ["plexusone"],
   "releases": [
+    {
+      "version": "v0.3.0",
+      "date": "2026-04-05",
+      "highlights": [
+        { "description": "Rebrand from AgentPlexus to PlexusOne with new domain plexusone.dev" },
+        { "description": "Enterprise mega menu with Products, Libraries, Agents, and Specifications" },
+        { "description": "CDN-hosted MkDocs theme CSS for unified styling across documentation sites" }
+      ],
+      "added": [
+        { "description": "Enterprise mega menu for Products dropdown with categorized navigation", "commit": "c5f73b9" },
+        { "description": "Shared `plexus-nav.js` for unified navigation across MkDocs sites", "commit": "f9a5798" },
+        { "description": "CDN-hosted `plexusone-mkdocs.css` theme for consistent MkDocs styling", "commit": "1e9a5e1" },
+        { "description": "Category-based URL routes for products (`/libraries/`, `/agents/`, `/specifications/`)", "commit": "1207b92" },
+        { "description": "Libraries and Agents category listing pages", "commit": "9fde3e0" },
+        { "description": "Documentation button with gradient styling on product pages", "commit": "bd52d76" },
+        { "description": "Centralized `products.json` for unified navigation data", "commit": "63ae118" },
+        { "description": "Documentation links for OmniVoice and PlexusOne App", "commit": "786a290" },
+        { "description": "Academy section with course pages", "commit": "47cf834" },
+        { "description": "Claude Code and Kiro integrations for AssistantKit", "commit": "5e1832c" },
+        { "description": "Deepgram integration for OmniVoice", "commit": "04fca1c" }
+      ],
+      "changed": [
+        { "description": "Rebrand from AgentPlexus to PlexusOne across all components", "commit": "0554eb4" },
+        { "description": "Domain migration from agentplexus.dev to plexusone.dev", "commit": "2c02988" },
+        { "description": "GitHub organization renamed from agentplexus to plexusone", "commit": "58a2b2d" },
+        { "description": "npm packages renamed from `@agentplexus` to `@plexusone`", "commit": "f51e08b" },
+        { "description": "Mega menu links point to marketing pages instead of docs", "commit": "1c6758f" },
+        { "description": "Branding gradient swapped from One to Plexus color scheme", "commit": "b7ab5d4" },
+        { "description": "Mega menu Libraries updated to OmniLLM, OmniObserve, OmniSerp, OmniVoice", "commit": "f2a5134" }
+      ],
+      "fixed": [
+        { "description": "Mobile menu missing Agents category and incorrect Libraries URL", "commit": "6d1edd2" },
+        { "description": "MkDocs search bar text visibility in dark mode (--md-primary-bg-color)", "commit": "c30298e" },
+        { "description": "PlexusOne App docsUrl pointing to MkDocs site", "commit": "331a59c" },
+        { "description": "Multi-Agent Spec docsUrl pointing to MkDocs site", "commit": "a936715" },
+        { "description": "Navigation font sizes using px units for consistency", "commit": "2475663" },
+        { "description": "External URLs updated for plexusone GitHub Pages migration", "commit": "15f715b" },
+        { "description": "Presentation URLs updated for iframe compatibility", "commit": "ac0d555" }
+      ]
+    },
     {
       "version": "v0.2.0",
       "date": "2026-02-02",
