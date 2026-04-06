@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Calendar, Clock, ArrowRight, Rss } from 'lucide-react'
+import blogPostsData from '../data/blog-posts.json'
 
 export type BlogCategory = 'Product' | 'Engineering'
 
@@ -15,107 +16,8 @@ export interface BlogPost {
   category: BlogCategory
 }
 
-export const blogPosts: BlogPost[] = [
-  {
-    slug: 'unified-design-across-platforms',
-    title: 'Achieving Design Consistency Across 54+ Properties with Design System Spec and Lit Web Components',
-    excerpt:
-      'PlexusOne spans a marketing website, 33 MkDocs documentation sites, and ~20 presentation decks. Here\'s how we unified design with a JSON-based spec, GitHub Pages hosting, and Lit web components replacing separate React and vanilla JS implementations.',
-    date: '2026-04-05',
-    readTime: '12 min',
-    tags: ['Design System', 'Web Components', 'Lit', 'MkDocs'],
-    author: 'PlexusOne Team',
-    category: 'Engineering',
-  },
-  {
-    slug: 'multi-agent-spec-assistantkit-growing-ecosystem',
-    title: 'Multi-Agent-Spec and AssistantKit: A Growing Ecosystem for Subagents',
-    excerpt:
-      'The multi-agent-spec and AssistantKit ecosystem is maturing with multiple implementations including agent-team-release for Claude Code Agent Teams. Write agents once, deploy to Claude Code, Kiro CLI, and more.',
-    date: '2026-02-22',
-    readTime: '7 min',
-    tags: ['Multi-Agent', 'Subagents', 'Claude Code', 'Agent Teams'],
-    author: 'PlexusOne Team',
-    category: 'Product',
-  },
-  {
-    slug: 'introducing-releases-page',
-    title: 'Introducing the Releases Page: Tracking Progress Across PlexusOne',
-    excerpt:
-      'We built ReleaseLog to aggregate GitHub releases across all our repositories into a single, filterable view with a GitHub-style heatmap. Now live at plexusone.dev/releases.',
-    date: '2026-02-02',
-    readTime: '5 min',
-    tags: ['Releases', 'Open Source'],
-    author: 'PlexusOne Team',
-    category: 'Product',
-  },
-  {
-    slug: 'mcp-confluence-table-corruption',
-    title: 'Why We Built Another Confluence MCP Server',
-    excerpt:
-      'Existing Confluence MCP servers corrupt tables. The root cause: LLMs generate Markdown or HTML5, but Confluence uses Storage Format XHTML. We built a server that handles both structured creation and lossless editing.',
-    date: '2024-12-29',
-    readTime: '6 min',
-    tags: ['MCP', 'Confluence'],
-    author: 'PlexusOne Team',
-    category: 'Engineering',
-  },
-  {
-    slug: 'security-gated-mcp-servers',
-    title: 'Security-Gated MCP Servers with VaultGuard',
-    excerpt:
-      'MCP servers need API keys. Environment variables in config files are convenient but insecure. We built a pattern using VaultGuard that gates credential access on device security posture.',
-    date: '2024-12-29',
-    readTime: '8 min',
-    tags: ['MCP', 'Security', 'VaultGuard', 'OmniVault'],
-    author: 'PlexusOne Team',
-    category: 'Engineering',
-  },
-  {
-    slug: 'wcag-accessibility-with-ai',
-    title: 'A Severity Rubric for WCAG 2.2 AA Prioritization',
-    excerpt:
-      'WCAG defines conformance levels, not severity. When you find 14 accessibility issues, which do you fix first? We built a severity rubric based on user impact and share our initial implementation pass.',
-    date: '2024-12-29',
-    readTime: '12 min',
-    tags: ['Accessibility', 'WCAG'],
-    author: 'PlexusOne Team',
-    category: 'Engineering',
-  },
-  {
-    slug: 'otel-semantic-conventions-agentic-ai',
-    title: 'OpenTelemetry Semantic Conventions for Agentic AI',
-    excerpt:
-      'Multi-agent AI systems need observability beyond what OpenTelemetry GenAI provides. We built semantic conventions for workflows, tasks, handoffs, and tool calls—extending gen_ai.agent.* to give multi-agent systems first-class observability.',
-    date: '2024-12-28',
-    readTime: '8 min',
-    tags: ['OpenTelemetry', 'Observability', 'Multi-Agent', 'OmniObserve'],
-    author: 'PlexusOne Team',
-    category: 'Engineering',
-  },
-  {
-    slug: 'ai-assisted-sdk-development',
-    title: 'Building Production Go SDKs with Claude Opus 4.5',
-    excerpt:
-      'We built two complete Go SDKs in hours instead of weeks. The pattern: OpenAPI spec → ogen code generation → wrapper services. Here\'s what we learned about AI-assisted SDK development.',
-    date: '2024-12-28',
-    readTime: '8 min',
-    tags: ['Claude Opus 4.5', 'SDK Development', 'Go'],
-    author: 'PlexusOne Team',
-    category: 'Engineering',
-  },
-  {
-    slug: 'building-stats-agent-team',
-    title: 'Building a Multi-Agent Statistics Verification System',
-    excerpt:
-      'The journey of creating stats-agent-team: from hallucinated statistics to verified facts. Lessons learned building a 4-agent pipeline with OmniLLM, OmniSerp, and OmniObserve.',
-    date: '2024-12-28',
-    readTime: '10 min',
-    tags: ['Multi-Agent', 'OmniLLM', 'OmniSerp', 'Case Study'],
-    author: 'PlexusOne Team',
-    category: 'Engineering',
-  },
-]
+// Import from JSON single source of truth
+export const blogPosts: BlogPost[] = blogPostsData as BlogPost[]
 
 export function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState<BlogCategory | 'All'>('All')
