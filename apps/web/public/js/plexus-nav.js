@@ -374,6 +374,16 @@
         margin: 0 0 4px 0;
       }
 
+      .plexus-megamenu-category h3 a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+
+      .plexus-megamenu-category h3 a:hover {
+        color: #06b6d4;
+      }
+
       .plexus-megamenu-category .plexus-megamenu-desc {
         font-size: 11px;
         color: #6b7280;
@@ -575,8 +585,9 @@
 
       var remaining = allInCategory.length - products.length;
 
+      var categoryUrl = BASE_URL + CATEGORY_PATHS[catKey];
       html += '<div class="plexus-megamenu-category">';
-      html += '<h3>' + category.label + '</h3>';
+      html += '<h3><a href="' + categoryUrl + '">' + category.label + '</a></h3>';
       html += '<p class="plexus-megamenu-desc">' + category.description + '</p>';
       html += '<ul>';
 
@@ -616,28 +627,21 @@
 
     var html = '';
 
-    // Product categories
+    // Products section with category links (matching React Navbar.tsx)
+    html += '<div class="plexus-nav-mobile-section">';
+    html += '<span class="plexus-nav-mobile-label">Products</span>';
+
+    // Category links
     CATEGORY_ORDER.forEach(function(catKey) {
       var category = data.categories[catKey];
       if (!category) return;
-
-      var products = data.products.filter(function(p) {
-        return p.category === catKey && p.featured && p.docsUrl;
-      }).slice(0, 4);
-
-      html += '<div class="plexus-nav-mobile-section">';
-      html += '<span class="plexus-nav-mobile-label">' + category.label + '</span>';
-
-      products.forEach(function(product) {
-        var categoryPath = CATEGORY_PATHS[product.category] || '/products';
-        var url = BASE_URL + categoryPath + '/' + product.slug;
-        html += '<a href="' + url + '" class="plexus-nav-mobile-link">' + product.name + '</a>';
-      });
-
-      var moreUrl = BASE_URL + CATEGORY_PATHS[catKey];
-      html += '<a href="' + moreUrl + '" class="plexus-nav-mobile-link plexus-nav-mobile-more">View all ' + category.label.toLowerCase() + '</a>';
-      html += '</div>';
+      var categoryUrl = BASE_URL + CATEGORY_PATHS[catKey];
+      html += '<a href="' + categoryUrl + '" class="plexus-nav-mobile-link">' + category.label + '</a>';
     });
+
+    // Integrations link
+    html += '<a href="' + BASE_URL + '/integrations" class="plexus-nav-mobile-link">Integrations</a>';
+    html += '</div>';
 
     // Projects
     html += '<div class="plexus-nav-mobile-section">';
