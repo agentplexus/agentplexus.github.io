@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
-import { Navbar } from './components/Navbar'
 import { ScrollToTop } from './components/ScrollToTop'
 import { Hero } from './components/Hero'
 import { GettingStarted } from './components/GettingStarted'
@@ -58,7 +57,7 @@ function App() {
       <RedirectHandler />
       <ScrollToTop />
       <div className="min-h-screen bg-plexus-dark">
-        <Navbar />
+        <plexus-nav></plexus-nav>
         <main id="main-content">
           <Routes>
             <Route path="/" element={<HomePage />} />
