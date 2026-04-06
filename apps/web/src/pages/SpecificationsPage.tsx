@@ -1,59 +1,58 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Github, FileText, Layers, Code, BookOpen } from 'lucide-react'
+import { ArrowRight, Github, BookOpen } from 'lucide-react'
+import { cn } from '../lib/utils'
 
-interface Specification {
+interface Product {
   name: string
   slug: string
   tagline: string
-  description: string
-  githubUrl: string
-  docsUrl?: string
-  components: {
-    name: string
-    description: string
-    icon: typeof FileText
-  }[]
-  features: string[]
+  description?: string
+  category: string
+  githubUrl?: string
+  docsUrl?: string | null
+  featured?: boolean
 }
 
-const specifications: Specification[] = [
-  {
-    name: 'Multi-Agent Spec',
-    slug: 'multi-agent-spec',
-    tagline: 'Platform-Agnostic Agent Definitions',
-    description:
-      'A specification format for defining AI agents, skills, and commands using Markdown with YAML frontmatter. Write once, deploy to Claude Code, Kiro CLI, and other platforms via assistantkit.',
-    githubUrl: 'https://github.com/plexusone/multi-agent-spec',
-    docsUrl: 'https://github.com/plexusone/multi-agent-spec/blob/main/README.md',
-    components: [
-      {
-        name: 'Agents',
-        description: 'Specialized AI assistants with custom prompts, tool access, and model preferences.',
-        icon: Layers,
-      },
-      {
-        name: 'Skills',
-        description: 'Reusable knowledge blocks that can be attached to agents or invoked directly.',
-        icon: Code,
-      },
-      {
-        name: 'Commands',
-        description: 'User-invokable actions with parameters and execution logic.',
-        icon: FileText,
-      },
-    ],
-    features: [
-      'YAML frontmatter for configuration (name, description, tools, model)',
-      'Markdown body for system prompts and instructions',
-      'Platform-agnostic format with multi-target generation',
-      'Support for tool restrictions and permission modes',
-      'Agent memory and persistent storage definitions',
-      'Lifecycle hooks for pre/post tool execution',
-    ],
-  },
+interface ProductsData {
+  products: Product[]
+}
+
+const colorClasses = [
+  { text: 'text-plexus-cyan', border: 'border-plexus-cyan/30 hover:border-plexus-cyan/50' },
+  { text: 'text-plexus-purple', border: 'border-plexus-purple/30 hover:border-plexus-purple/50' },
+  { text: 'text-plexus-pink', border: 'border-plexus-pink/30 hover:border-plexus-pink/50' },
+  { text: 'text-plexus-violet', border: 'border-plexus-violet/30 hover:border-plexus-violet/50' },
 ]
 
 export function SpecificationsPage() {
+  const [specifications, setSpecifications] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetch('/data/products.json')
+      .then((res) => res.json())
+      .then((data: ProductsData) => {
+        const specs = data.products
+          .filter((p) => p.category === 'specification' && p.docsUrl)
+          .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0))
+        setSpecifications(specs)
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Failed to load specifications:', err)
+        setLoading(false)
+      })
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-plexus-dark pt-28 pb-16 px-4 flex items-center justify-center">
+        <div className="text-gray-400">Loading...</div>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-plexus-dark pt-28 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -62,103 +61,77 @@ export function SpecificationsPage() {
             <span className="gradient-text">Specifications</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Open formats for defining AI agents and multi-agent systems.
+            Open formats for defining AI agents, design systems, and multi-agent architectures.
           </p>
         </div>
 
-        <div className="grid gap-8">
-          {specifications.map((spec) => (
-            <div
-              key={spec.slug}
-              className="rounded-xl border border-white/10 bg-plexus-slate/30 p-8"
-            >
-              <div className="flex flex-col lg:flex-row gap-8">
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-white mb-2">{spec.name}</h2>
-                  <p className="text-xl text-plexus-cyan mb-4">{spec.tagline}</p>
-                  <p className="text-gray-400 mb-6">{spec.description}</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {specifications.map((spec, index) => {
+            const colors = colorClasses[index % colorClasses.length]
+            return (
+              <div
+                key={spec.slug}
+                className={cn(
+                  'rounded-xl border bg-plexus-slate/30 p-6 transition-colors',
+                  colors.border
+                )}
+              >
+                <h2 className={cn('text-2xl font-bold mb-1', colors.text)}>
+                  {spec.name}
+                </h2>
+                <p className="text-gray-400 text-sm mb-3">{spec.tagline}</p>
+                {spec.description && (
+                  <p className="text-gray-300 mb-5 line-clamp-3">{spec.description}</p>
+                )}
 
-                  <div className="flex flex-wrap gap-4 mb-8">
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    to={`/specifications/${spec.slug}`}
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-plexus-cyan to-plexus-purple text-white font-medium text-sm hover:opacity-90 transition-opacity"
+                  >
+                    Learn More
+                    <ArrowRight size={16} />
+                  </Link>
+                  {spec.githubUrl && (
                     <a
                       href={spec.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-plexus-cyan to-plexus-purple text-white font-medium hover:opacity-90 transition-opacity"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/20 text-gray-300 text-sm hover:bg-white/5 transition-colors"
                     >
-                      <Github size={18} />
-                      View Specification
+                      <Github size={16} />
+                      GitHub
                     </a>
-                    {spec.docsUrl && (
-                      <a
-                        href={spec.docsUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/20 text-gray-300 hover:bg-white/5 transition-colors"
-                      >
-                        <BookOpen size={18} />
-                        Documentation
-                      </a>
-                    )}
-                  </div>
-
-                  <h3 className="text-lg font-semibold text-white mb-4">Components</h3>
-                  <div className="grid sm:grid-cols-3 gap-4 mb-8">
-                    {spec.components.map((component) => (
-                      <div
-                        key={component.name}
-                        className="rounded-lg border border-white/10 bg-plexus-dark/50 p-4"
-                      >
-                        <div className="flex items-center gap-2 mb-2">
-                          <component.icon size={18} className="text-plexus-purple" />
-                          <h4 className="font-semibold text-white">{component.name}</h4>
-                        </div>
-                        <p className="text-sm text-gray-400">{component.description}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <h3 className="text-lg font-semibold text-white mb-4">Features</h3>
-                  <ul className="grid sm:grid-cols-2 gap-2">
-                    {spec.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-gray-400">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-plexus-cyan shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="lg:w-80 shrink-0">
-                  <div className="rounded-lg border border-white/10 bg-plexus-dark/50 p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Example Agent</h3>
-                    <pre className="text-sm text-gray-400 overflow-x-auto">
-{`---
-name: code-reviewer
-description: Reviews code quality
-tools: Read, Grep, Glob
-model: sonnet
----
-
-You are a senior code reviewer.
-
-When invoked:
-1. Run git diff to see changes
-2. Review for quality issues
-3. Report findings`}
-                    </pre>
-                  </div>
+                  )}
+                  {spec.docsUrl && (
+                    <a
+                      href={spec.docsUrl.startsWith('/') ? `https://plexusone.dev${spec.docsUrl}` : spec.docsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/20 text-gray-300 text-sm hover:bg-white/5 transition-colors"
+                    >
+                      <BookOpen size={16} />
+                      Docs
+                    </a>
+                  )}
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
+
+        {specifications.length === 0 && (
+          <div className="text-center text-gray-400">
+            No specifications found.
+          </div>
+        )}
 
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-4">
-            Use multi-agent-spec with assistantkit to generate plugins
+            Use multi-agent-spec with AssistantKit to generate plugins
           </p>
           <Link
-            to="/products/assistantkit"
+            to="/libraries/assistantkit"
             className="inline-flex items-center gap-2 text-plexus-cyan hover:text-plexus-purple transition-colors"
           >
             Learn about AssistantKit

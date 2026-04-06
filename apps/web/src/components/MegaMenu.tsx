@@ -133,9 +133,13 @@ export function MegaMenu({ isActive = false }: MegaMenuProps) {
                     <div key={categoryKey}>
                       {/* Category header */}
                       <div className="mb-4">
-                        <h3 className="text-sm font-semibold text-white uppercase tracking-wider">
+                        <Link
+                          to={CATEGORY_PATHS[categoryKey]}
+                          className="text-sm font-semibold text-white uppercase tracking-wider hover:text-plexus-cyan transition-colors"
+                          onClick={() => setIsOpen(false)}
+                        >
                           {category.label}
-                        </h3>
+                        </Link>
                         <p className="text-xs text-gray-500 mt-1">
                           {category.description}
                         </p>

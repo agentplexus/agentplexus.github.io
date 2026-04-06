@@ -1,66 +1,58 @@
-import { ExternalLink, Github, Bot, Workflow, Server, Zap, BookOpen } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { ArrowRight, Github, BookOpen } from 'lucide-react'
+import { cn } from '../lib/utils'
 
-interface Application {
+interface Product {
   name: string
   slug: string
   tagline: string
-  description: string
-  githubUrl: string
-  docsUrl?: string
-  presentationUrl?: string
-  highlights: {
-    icon: typeof Bot
-    title: string
-    description: string
-  }[]
-  features: string[]
+  description?: string
+  category: string
+  githubUrl?: string
+  docsUrl?: string | null
+  featured?: boolean
 }
 
-const applications: Application[] = [
-  {
-    name: 'OmniAgent',
-    slug: 'omniagent',
-    tagline: 'Multi-Runtime AI Agent',
-    description:
-      'Production-ready AI agent built on AgentKit. Supports tool use, multi-model providers, and deployment to Kubernetes or AWS Bedrock AgentCore. The reference implementation of the PlexusOne stack.',
-    githubUrl: 'https://github.com/plexusone/omniagent',
-    docsUrl: 'https://plexusone.dev/omniagent/',
-    highlights: [
-      {
-        icon: Bot,
-        title: 'Multi-Provider',
-        description: 'OpenAI, Anthropic, Google Gemini, xAI Grok, Ollama via OmniLLM',
-      },
-      {
-        icon: Workflow,
-        title: 'Tool Use',
-        description: 'Web search, code execution, file operations, and custom tools',
-      },
-      {
-        icon: Server,
-        title: 'Multi-Runtime',
-        description: 'Deploy to Kubernetes or AWS Bedrock AgentCore',
-      },
-      {
-        icon: Zap,
-        title: 'Observable',
-        description: 'Built-in tracing with OmniObserve integration',
-      },
-    ],
-    features: [
-      'HTTP and A2A protocol support',
-      'Streaming responses with tool call handling',
-      'Session management and conversation history',
-      'Environment-based configuration',
-      'Docker and Helm deployment artifacts',
-      'AWS Bedrock AgentCore serverless deployment',
-      'Built-in observability hooks',
-      'Extensible tool registry',
-    ],
-  },
+interface ProductsData {
+  products: Product[]
+}
+
+const colorClasses = [
+  { text: 'text-plexus-cyan', border: 'border-plexus-cyan/30 hover:border-plexus-cyan/50' },
+  { text: 'text-plexus-purple', border: 'border-plexus-purple/30 hover:border-plexus-purple/50' },
+  { text: 'text-plexus-pink', border: 'border-plexus-pink/30 hover:border-plexus-pink/50' },
+  { text: 'text-plexus-violet', border: 'border-plexus-violet/30 hover:border-plexus-violet/50' },
 ]
 
 export function ApplicationsPage() {
+  const [applications, setApplications] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetch('/data/products.json')
+      .then((res) => res.json())
+      .then((data: ProductsData) => {
+        const apps = data.products
+          .filter((p) => p.category === 'application' && p.docsUrl)
+          .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0))
+        setApplications(apps)
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Failed to load applications:', err)
+        setLoading(false)
+      })
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-plexus-dark pt-28 pb-16 px-4 flex items-center justify-center">
+        <div className="text-gray-400">Loading...</div>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-plexus-dark pt-28 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -73,124 +65,80 @@ export function ApplicationsPage() {
           </p>
         </div>
 
-        <div className="grid gap-8">
-          {applications.map((app) => (
-            <div
-              key={app.slug}
-              className="rounded-xl border border-white/10 bg-plexus-slate/30 p-8"
-            >
-              <div className="flex flex-col lg:flex-row gap-8">
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-white mb-2">{app.name}</h2>
-                  <p className="text-xl text-plexus-purple mb-4">{app.tagline}</p>
-                  <p className="text-gray-400 mb-6">{app.description}</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {applications.map((app, index) => {
+            const colors = colorClasses[index % colorClasses.length]
+            return (
+              <div
+                key={app.slug}
+                className={cn(
+                  'rounded-xl border bg-plexus-slate/30 p-6 transition-colors',
+                  colors.border
+                )}
+              >
+                <h2 className={cn('text-2xl font-bold mb-1', colors.text)}>
+                  {app.name}
+                </h2>
+                <p className="text-gray-400 text-sm mb-3">{app.tagline}</p>
+                {app.description && (
+                  <p className="text-gray-300 mb-5 line-clamp-3">{app.description}</p>
+                )}
 
-                  <div className="flex flex-wrap gap-4 mb-8">
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    to={`/applications/${app.slug}`}
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-plexus-cyan to-plexus-purple text-white font-medium text-sm hover:opacity-90 transition-opacity"
+                  >
+                    Learn More
+                    <ArrowRight size={16} />
+                  </Link>
+                  {app.githubUrl && (
                     <a
                       href={app.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-plexus-cyan to-plexus-purple text-white font-medium hover:opacity-90 transition-opacity"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/20 text-gray-300 text-sm hover:bg-white/5 transition-colors"
                     >
-                      <Github size={18} />
-                      View on GitHub
+                      <Github size={16} />
+                      GitHub
                     </a>
-                    {app.docsUrl && (
-                      <a
-                        href={app.docsUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/20 text-gray-300 hover:bg-white/5 transition-colors"
-                      >
-                        <BookOpen size={18} />
-                        Documentation
-                      </a>
-                    )}
-                    {app.presentationUrl && (
-                      <a
-                        href={app.presentationUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/20 text-gray-300 hover:bg-white/5 transition-colors"
-                      >
-                        <ExternalLink size={18} />
-                        Presentation
-                      </a>
-                    )}
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                    {app.highlights.map((highlight) => (
-                      <div
-                        key={highlight.title}
-                        className="rounded-lg border border-white/10 bg-plexus-dark/50 p-4"
-                      >
-                        <div className="flex items-center gap-2 mb-2">
-                          <highlight.icon size={18} className="text-plexus-cyan" />
-                          <h4 className="font-semibold text-white">{highlight.title}</h4>
-                        </div>
-                        <p className="text-sm text-gray-400">{highlight.description}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <h3 className="text-lg font-semibold text-white mb-4">Features</h3>
-                  <ul className="grid sm:grid-cols-2 gap-2">
-                    {app.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-gray-400">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-plexus-purple shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="lg:w-80 shrink-0">
-                  <div className="rounded-lg border border-white/10 bg-plexus-dark/50 p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Quick Start</h3>
-                    <pre className="text-sm text-gray-400 overflow-x-auto whitespace-pre-wrap">
-{`# Clone and run
-git clone https://github.com/\\
-  plexusone/omniagent
-cd omniagent
-
-# Configure
-cp .env.example .env
-# Edit .env with API keys
-
-# Run locally
-go run ./cmd/omniagent
-
-# Or with Docker
-docker-compose up`}
-                    </pre>
-                  </div>
-
-                  <div className="mt-4 rounded-lg border border-white/10 bg-plexus-dark/50 p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Built With</h3>
-                    <ul className="space-y-2 text-sm text-gray-400">
-                      <li className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-plexus-cyan" />
-                        OmniLLM - Multi-provider LLM
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-plexus-purple" />
-                        OmniVault - Secret management
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-plexus-pink" />
-                        OmniObserve - Observability
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-plexus-violet" />
-                        AgentKit - Agent framework
-                      </li>
-                    </ul>
-                  </div>
+                  )}
+                  {app.docsUrl && (
+                    <a
+                      href={app.docsUrl.startsWith('/') ? `https://plexusone.dev${app.docsUrl}` : app.docsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/20 text-gray-300 text-sm hover:bg-white/5 transition-colors"
+                    >
+                      <BookOpen size={16} />
+                      Docs
+                    </a>
+                  )}
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
+        </div>
+
+        {applications.length === 0 && (
+          <div className="text-center text-gray-400">
+            No applications found.
+          </div>
+        )}
+
+        <div className="mt-12 text-center">
+          <p className="text-gray-400 mb-4">
+            All applications are open source and available on GitHub
+          </p>
+          <a
+            href="https://github.com/plexusone"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-plexus-cyan hover:text-plexus-purple transition-colors"
+          >
+            View all repositories
+            <ArrowRight size={16} />
+          </a>
         </div>
       </div>
     </div>
