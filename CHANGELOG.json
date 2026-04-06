@@ -7,46 +7,22 @@
   "maintainers": ["plexusone"],
   "releases": [
     {
-      "version": "v0.4.0",
+      "version": "v0.3.0",
       "date": "2026-04-05",
       "highlights": [
+        { "description": "Rebrand from AgentPlexus to PlexusOne with new domain plexusone.dev" },
         { "description": "Unified navigation with Lit Web Components replacing separate React and vanilla JS implementations" },
-        { "description": "71% code reduction (1,390 → 400 lines) with single source of truth for all 54+ properties" },
-        { "description": "Blog category filter for Product and Engineering articles" }
+        { "description": "71% code reduction (1,390 → 400 lines) with single source of truth for all 54+ properties" }
       ],
       "added": [
         { "description": "Lit Web Components navigation package (`packages/plexus-nav/`)", "commit": "1603e0c" },
         { "description": "Auto-initialization for MkDocs backward compatibility with `#plexus-nav-root`", "commit": "91c141c" },
         { "description": "Blog category filter with Product and Engineering classifications", "commit": "5cb507f" },
+        { "description": "Blog post JSON single source of truth (`apps/web/src/data/blog-posts.json`)", "commit": "2f072ce" },
         { "description": "Case study: Achieving Design Consistency Across 54+ Properties", "commit": "73411bd" },
         { "description": "CLAUDE.md project documentation with build/deploy workflows", "commit": "eafd3f3" },
-        { "description": "TypeScript declarations for `<plexus-nav>` JSX support", "commit": "1603e0c" }
-      ],
-      "changed": [
-        { "description": "Navigation uses IIFE bundle at `/js/plexus-nav.js` for regular `<script>` tag compatibility", "commit": "91c141c" },
-        { "description": "React app uses `<plexus-nav>` Web Component instead of Navbar.tsx", "commit": "1603e0c" },
-        { "description": "Releases blog post reclassified from Engineering to Product category", "commit": "9b2a886" }
-      ],
-      "fixed": [
-        { "description": "Navigation not appearing on MkDocs sites (auto-init for backward compatibility)", "commit": "91c141c" },
-        { "description": "Duplicate H1 title in blog post rendering (strip first H1 from markdown)", "commit": "98e898a" }
-      ],
-      "removed": [
-        { "description": "React Navbar.tsx and MegaMenu.tsx components (replaced by Lit Web Component)", "commit": "1603e0c" },
-        { "description": "Vanilla JavaScript plexus-nav.js (820 lines, replaced by Lit)", "commit": "1603e0c" }
-      ]
-    },
-    {
-      "version": "v0.3.0",
-      "date": "2026-04-05",
-      "highlights": [
-        { "description": "Rebrand from AgentPlexus to PlexusOne with new domain plexusone.dev" },
-        { "description": "Enterprise mega menu with Products, Libraries, Agents, and Specifications" },
-        { "description": "CDN-hosted MkDocs theme CSS for unified styling across documentation sites" }
-      ],
-      "added": [
+        { "description": "TypeScript declarations for `<plexus-nav>` JSX support", "commit": "1603e0c" },
         { "description": "Enterprise mega menu for Products dropdown with categorized navigation", "commit": "c5f73b9" },
-        { "description": "Shared `plexus-nav.js` for unified navigation across MkDocs sites", "commit": "f9a5798" },
         { "description": "CDN-hosted `plexusone-mkdocs.css` theme for consistent MkDocs styling", "commit": "1e9a5e1" },
         { "description": "Category-based URL routes for products (`/libraries/`, `/agents/`, `/specifications/`)", "commit": "1207b92" },
         { "description": "Libraries and Agents category listing pages", "commit": "9fde3e0" },
@@ -58,17 +34,23 @@
         { "description": "Deepgram integration for OmniVoice", "commit": "04fca1c" }
       ],
       "changed": [
-        { "description": "Unify plexus-nav.js with React navigation for consistent MkDocs nav bars", "commit": "44f662d" },
-        { "description": "Mega menu category headings now link to section pages", "commit": "d0e7399" },
+        { "description": "Navigation uses IIFE bundle at `/js/plexus-nav.js` for regular `<script>` tag compatibility", "commit": "91c141c" },
+        { "description": "React app uses `<plexus-nav>` Web Component instead of Navbar.tsx", "commit": "1603e0c" },
+        { "description": "Blog metadata consolidated from BlogPage.tsx to JSON single source of truth", "commit": "91a69c7" },
+        { "description": "Atom feed generator reads from JSON single source of truth", "commit": "ad7fafc" },
+        { "description": "Releases blog post reclassified from Engineering to Product category", "commit": "9b2a886" },
         { "description": "Rebrand from AgentPlexus to PlexusOne across all components", "commit": "0554eb4" },
         { "description": "Domain migration from agentplexus.dev to plexusone.dev", "commit": "2c02988" },
         { "description": "GitHub organization renamed from agentplexus to plexusone", "commit": "58a2b2d" },
         { "description": "npm packages renamed from `@agentplexus` to `@plexusone`", "commit": "f51e08b" },
+        { "description": "Mega menu category headings now link to section pages", "commit": "d0e7399" },
         { "description": "Mega menu links point to marketing pages instead of docs", "commit": "1c6758f" },
         { "description": "Branding gradient swapped from One to Plexus color scheme", "commit": "b7ab5d4" },
         { "description": "Mega menu Libraries updated to OmniLLM, OmniObserve, OmniSerp, OmniVoice", "commit": "f2a5134" }
       ],
       "fixed": [
+        { "description": "Navigation not appearing on MkDocs sites (auto-init for backward compatibility)", "commit": "91c141c" },
+        { "description": "Duplicate H1 title in blog post rendering (strip first H1 from markdown)", "commit": "98e898a" },
         { "description": "Remove unnecessary Stable/Beta pills from product cards", "commit": "f357314" },
         { "description": "Section pages now use products.json as single source of truth", "commit": "d0e7399" },
         { "description": "Mobile menu missing Agents category and incorrect Libraries URL", "commit": "6d1edd2" },
@@ -78,6 +60,11 @@
         { "description": "Navigation font sizes using px units for consistency", "commit": "2475663" },
         { "description": "External URLs updated for plexusone GitHub Pages migration", "commit": "15f715b" },
         { "description": "Presentation URLs updated for iframe compatibility", "commit": "ac0d555" }
+      ],
+      "removed": [
+        { "description": "React Navbar.tsx and MegaMenu.tsx components (replaced by Lit Web Component)", "commit": "1603e0c" },
+        { "description": "Vanilla JavaScript plexus-nav.js (820 lines, replaced by Lit)", "commit": "1603e0c" },
+        { "description": "Orphaned files: content/data/, TODO.md, PRESENTATION.md", "commit": "bb38ae3" }
       ]
     },
     {
