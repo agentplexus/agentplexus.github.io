@@ -1,4 +1,4 @@
-// Command atomfeed generates an Atom feed for the AgentPlexus blog.
+// Command atomfeed generates an Atom feed for the PlexusOne blog.
 package main
 
 import (
@@ -19,6 +19,7 @@ type BlogPost struct {
 	ReadTime string   `json:"readTime"`
 	Tags     []string `json:"tags"`
 	Author   string   `json:"author"`
+	Category string   `json:"category"`
 }
 
 // Atom feed structures
@@ -44,13 +45,13 @@ type Author struct {
 }
 
 type Entry struct {
-	Title     string   `xml:"title"`
-	Link      Link     `xml:"link"`
-	ID        string   `xml:"id"`
-	Updated   string   `xml:"updated"`
-	Published string   `xml:"published"`
-	Summary   Summary  `xml:"summary"`
-	Author    Author   `xml:"author"`
+	Title     string     `xml:"title"`
+	Link      Link       `xml:"link"`
+	ID        string     `xml:"id"`
+	Updated   string     `xml:"updated"`
+	Published string     `xml:"published"`
+	Summary   Summary    `xml:"summary"`
+	Author    Author     `xml:"author"`
 	Category  []Category `xml:"category,omitempty"`
 }
 
@@ -64,28 +65,27 @@ type Category struct {
 }
 
 const (
-	baseURL    = "https://agentplexus.github.io"
-	feedTitle  = "AgentPlexus Blog"
-	feedAuthor = "AgentPlexus Team"
+	baseURL    = "https://plexusone.dev"
+	feedTitle  = "PlexusOne Blog"
+	feedAuthor = "PlexusOne Team"
 )
 
-// findRepoRoot finds the repository root by looking for content directory
+// findRepoRoot finds the repository root by looking for apps/web directory
 func findRepoRoot() (string, error) {
-	// Start from the current directory
 	dir, err := os.Getwd()
 	if err != nil {
 		return "", err
 	}
 
-	// Walk up until we find the content directory (unique to repo root)
+	// Walk up until we find the apps/web directory (unique to repo root)
 	for {
-		contentDir := filepath.Join(dir, "content", "data")
-		if info, err := os.Stat(contentDir); err == nil && info.IsDir() {
+		appsDir := filepath.Join(dir, "apps", "web")
+		if info, err := os.Stat(appsDir); err == nil && info.IsDir() {
 			return dir, nil
 		}
 		parent := filepath.Dir(dir)
 		if parent == dir {
-			return "", fmt.Errorf("could not find repo root (no content/data directory found)")
+			return "", fmt.Errorf("could not find repo root (no apps/web directory found)")
 		}
 		dir = parent
 	}
@@ -99,8 +99,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	// Read blog posts from JSON file
-	postsFile := filepath.Join(repoRoot, "content", "data", "blog-posts.json")
+	// Read blog posts from JSON file (single source of truth)
+	postsFile := filepath.Join(repoRoot, "apps", "web", "src", "data", "blog-posts.json")
 	data, err := os.ReadFile(postsFile)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error reading %s: %v\n", postsFile, err)
@@ -133,7 +133,7 @@ func main() {
 		ID:      baseURL + "/blog",
 		Author:  Author{Name: feedAuthor},
 		Link: []Link{
-			{Href: baseURL + "/blog/atom.xml", Rel: "self", Type: "application/atom+xml"},
+			{Href: baseURL + "/atom.xml", Rel: "self", Type: "application/atom+xml"},
 			{Href: baseURL + "/blog", Rel: "alternate", Type: "text/html"},
 		},
 	}
@@ -167,8 +167,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	// Write to apps/web/public/blog/atom.xml
-	atomFile := filepath.Join(repoRoot, "apps", "web", "public", "blog", "atom.xml")
+	// Write to apps/web/public/atom.xml
+	atomFile := filepath.Join(repoRoot, "apps", "web", "public", "atom.xml")
 	xmlContent := xml.Header + string(output)
 	if err := os.WriteFile(atomFile, []byte(xmlContent), 0644); err != nil {
 		fmt.Fprintf(os.Stderr, "Error writing %s: %v\n", atomFile, err)
