@@ -184,6 +184,15 @@ export const megaMenuStyles = [
       color: var(--text-primary);
     }
 
+    .footer-divider {
+      color: var(--text-dim);
+      margin: 0 0.25rem;
+    }
+
+    .footer-link-legal {
+      font-size: 12px;
+    }
+
     .mega-menu-stats {
       font-size: 12px;
       color: var(--text-dim);

@@ -90,6 +90,21 @@ export class PlexusMegaMenu extends LitElement {
                 >
                   GitHub
                 </a>
+                <span class="footer-divider">|</span>
+                <a
+                  href="${this.baseUrl}/trust/privacy-policy/"
+                  class="footer-link footer-link-legal"
+                  @click=${this._handleLinkClick}
+                >
+                  Privacy
+                </a>
+                <a
+                  href="${this.baseUrl}/trust/terms-of-service/"
+                  class="footer-link footer-link-legal"
+                  @click=${this._handleLinkClick}
+                >
+                  Terms
+                </a>
               </div>
               <span class="mega-menu-stats">
                 ${totalProducts} products across ${totalCategories} categories
