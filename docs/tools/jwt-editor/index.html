@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JWT Editor - PlexusOne Developer Tools</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --plexus-dark: #0a0e1a;
+      --plexus-slate: #1e293b;
+      --plexus-cyan: #06b6d4;
+      --plexus-purple: #8b5cf6;
+      --plexus-pink: #ec4899;
+      --border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Dark theme (default for PlexusOne) */
+    :root {
+      --bg-primary: var(--plexus-dark);
+      --bg-secondary: var(--plexus-slate);
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --accent: var(--plexus-cyan);
+      --border: #334155;
+    }
+
+    /* Light theme */
+    [data-theme="light"] {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --accent: #3b82f6;
+      --border: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      padding-top: 64px; /* Account for fixed plexus-nav */
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: all 0.15s;
+    }
+
+    .back-link:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    [data-theme="light"] .back-link:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .page-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .page-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .page-header-actions a,
+    .theme-toggle {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.15s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .page-header-actions a:hover,
+    .theme-toggle:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    [data-theme="light"] .page-header-actions a:hover,
+    [data-theme="light"] .theme-toggle:hover {
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .editor-container {
+      height: calc(100vh - 120px);
+    }
+
+    /*
+     * PlexusOne Theme -> jwt-editor Theming API
+     *
+     * The jwt-editor component exposes --jwt-theme-* CSS custom properties
+     * as its theming API. PlexusOne maps its design-system-spec tokens to these
+     * properties to override the component's default theme.
+     */
+    jwt-editor {
+      height: 100%;
+
+      /* Map PlexusOne design tokens to jwt-editor theming API */
+      --jwt-theme-bg-primary: var(--plexus-dark);
+      --jwt-theme-bg-secondary: var(--plexus-slate);
+      --jwt-theme-bg-tertiary: #334155;
+      --jwt-theme-border: #475569;
+      --jwt-theme-text-primary: #f1f5f9;
+      --jwt-theme-text-secondary: #cbd5e1;
+      --jwt-theme-text-muted: #64748b;
+      --jwt-theme-accent: var(--plexus-cyan);
+      --jwt-theme-accent-hover: #0891b2;
+      --jwt-theme-font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Light theme overrides */
+    [data-theme="light"] jwt-editor {
+      --jwt-theme-bg-primary: #ffffff;
+      --jwt-theme-bg-secondary: #f8fafc;
+      --jwt-theme-bg-tertiary: #f1f5f9;
+      --jwt-theme-border: #e2e8f0;
+      --jwt-theme-text-primary: #1e293b;
+      --jwt-theme-text-secondary: #475569;
+      --jwt-theme-text-muted: #94a3b8;
+      --jwt-theme-accent: #3b82f6;
+      --jwt-theme-accent-hover: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <!-- PlexusOne Navigation -->
+  <div id="plexus-nav-root"></div>
+  <script src="/js/plexus-nav.js"></script>
+
+  <header class="page-header">
+    <div class="page-header-left">
+      <a href="../" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Tools
+      </a>
+      <span class="page-title">JWT Editor</span>
+    </div>
+    <div class="page-header-actions">
+      <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-label">Theme</span>
+      </button>
+      <a href="https://github.com/grokify/jwt-editor" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://github.com/grokify/jwt-editor#readme" target="_blank" rel="noopener noreferrer">Docs</a>
+    </div>
+  </header>
+
+  <div class="editor-container">
+    <jwt-editor
+      id="editor"
+      theme="dark"
+      autosave
+    ></jwt-editor>
+  </div>
+
+  <!-- JWT Editor -->
+  <script src="./jwt-editor.min.js"></script>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+    const editor = document.getElementById('editor');
+
+    function getCurrentTheme() {
+      return document.documentElement.getAttribute('data-theme') || 'dark';
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      editor.setAttribute('theme', theme);
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('jwt-theme', theme);
+    }
+
+    // Initialize theme from localStorage, default to dark for PlexusOne
+    const savedTheme = localStorage.getItem('jwt-theme') || 'dark';
+    setTheme(savedTheme);
+
+    // Toggle theme on click
+    themeToggle.addEventListener('click', () => {
+      const current = getCurrentTheme();
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
