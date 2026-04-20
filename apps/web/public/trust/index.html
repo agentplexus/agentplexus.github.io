@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Center - PlexusOne</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #e5e5e5;
+            --muted: #a3a3a3;
+            --accent: #3b82f6;
+            --border: #262626;
+            --card-bg: #141414;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text);
+        }
+        p {
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-decoration: none;
+            transition: border-color 0.2s;
+        }
+        .card:hover {
+            border-color: var(--accent);
+        }
+        .card h3 {
+            color: var(--text);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .card .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .nav {
+            margin-top: 1rem;
+        }
+        .nav a {
+            margin-right: 1.5rem;
+            color: var(--muted);
+        }
+        .commitments {
+            margin: 2rem 0;
+        }
+        .commitments li {
+            color: var(--muted);
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .commitments li::before {
+            content: "✓";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://plexusone.dev" class="logo">PlexusOne</a>
+            <div class="nav">
+                <a href="/trust/">Trust Center</a>
+                <a href="/trust/privacy-policy/">Privacy Policy</a>
+                <a href="/trust/terms-of-service/">Terms of Service</a>
+            </div>
+            <h1>Trust Center</h1>
+            <p class="subtitle">Our commitment to privacy, security, and transparency</p>
+        </header>
+
+        <main>
+            <p>At PlexusOne, we build AI agent platforms and developer tools that handle sensitive communications. Trust is foundational to everything we do. This Trust Center provides information about our policies, security practices, and commitments to you.</p>
+
+            <div class="cards">
+                <a href="/trust/privacy-policy/" class="card">
+                    <div class="icon">🔒</div>
+                    <h3>Privacy Policy</h3>
+                    <p>How we collect, use, and protect your personal information and communication data.</p>
+                </a>
+
+                <a href="/trust/terms-of-service/" class="card">
+                    <div class="icon">📋</div>
+                    <h3>Terms of Service</h3>
+                    <p>The agreement governing your use of PlexusOne services, APIs, and platforms.</p>
+                </a>
+            </div>
+
+            <h2>Our Security Commitments</h2>
+            <ul class="commitments">
+                <li><strong>Encryption:</strong> All data is encrypted in transit (TLS 1.3) and at rest (AES-256)</li>
+                <li><strong>Access Control:</strong> Strict authentication and authorization for all systems</li>
+                <li><strong>Minimal Data Collection:</strong> We collect only what's necessary to provide our services</li>
+                <li><strong>No Data Sales:</strong> We never sell your personal information or communication content</li>
+                <li><strong>Secure Development:</strong> We follow security best practices including code reviews and vulnerability scanning</li>
+                <li><strong>Incident Response:</strong> We have procedures to detect, respond to, and notify about security incidents</li>
+            </ul>
+
+            <h2>Compliance</h2>
+            <p>Our services are designed with compliance in mind:</p>
+            <ul class="commitments">
+                <li><strong>TCPA:</strong> Our messaging services support opt-out handling and consent management</li>
+                <li><strong>CTIA Guidelines:</strong> We follow carrier best practices for SMS/MMS messaging</li>
+                <li><strong>A2P 10DLC:</strong> Registered for application-to-person messaging in the US</li>
+                <li><strong>GDPR Ready:</strong> Data subject rights supported for EU users</li>
+                <li><strong>CCPA Ready:</strong> California privacy rights supported</li>
+            </ul>
+
+            <h2>Contact</h2>
+            <p>For privacy inquiries: <a href="mailto:privacy@plexusone.dev">privacy@plexusone.dev</a></p>
+            <p>For legal inquiries: <a href="mailto:legal@plexusone.dev">legal@plexusone.dev</a></p>
+            <p>For security issues: <a href="mailto:security@plexusone.dev">security@plexusone.dev</a></p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 PlexusOne. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
