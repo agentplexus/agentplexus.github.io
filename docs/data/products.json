@@ -122,26 +122,6 @@
       "integrations": ["openai", "anthropic"]
     },
     {
-      "name": "OmniStorage",
-      "slug": "omnistorage",
-      "tagline": "Multi-Provider Storage Abstraction",
-      "description": "Unified storage API for multiple cloud providers. Upload and download files to Amazon S3, Google Cloud Storage, Google Drive, or GitHub Releases with the same interface.",
-      "category": "library",
-      "status": "stable",
-      "color": "purple",
-      "features": [
-        "Amazon S3 via omni-aws",
-        "Google Cloud Storage via omni-google",
-        "Google Drive via omni-google",
-        "GitHub Releases via omni-github",
-        "Unified upload/download API",
-        "Extensible provider architecture"
-      ],
-      "githubUrl": "https://github.com/plexusone/omnistorage",
-      "docsUrl": "/omnistorage",
-      "integrations": ["aws", "gcs", "gdrive", "github"]
-    },
-    {
       "name": "OmniAgent",
       "slug": "omniagent",
       "tagline": "Production AI Agent Framework",

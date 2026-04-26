@@ -191,6 +191,38 @@ const categories: Category[] = [
     ],
   },
   {
+    title: 'Storage',
+    description: 'Multi-provider cloud storage abstraction',
+    module: 'OmniStorage',
+    moduleUrl: 'https://github.com/plexusone/omnistorage',
+    integrations: [
+      {
+        name: 'Amazon S3',
+        logo: '/integrations/aws.svg',
+        description: 'Object storage via omni-aws provider',
+        url: 'https://aws.amazon.com/s3/',
+      },
+      {
+        name: 'Google Cloud Storage',
+        logo: '/integrations/gcp.svg',
+        description: 'Object storage via omni-google provider',
+        url: 'https://cloud.google.com/storage',
+      },
+      {
+        name: 'Google Drive',
+        logo: '/integrations/gdrive.svg',
+        description: 'File storage via omni-google provider',
+        url: 'https://drive.google.com',
+      },
+      {
+        name: 'GitHub Releases',
+        logo: '/integrations/github.svg',
+        description: 'Release assets via omni-github provider',
+        url: 'https://docs.github.com/en/repositories/releasing-projects-on-github',
+      },
+    ],
+  },
+  {
     title: 'Secret Management',
     description: 'Cloud and local secret storage providers',
     module: 'OmniVault',
