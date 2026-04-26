@@ -197,6 +197,32 @@ const products: Product[] = [
     ],
   },
   {
+    name: 'OmniStorage',
+    slug: 'omnistorage',
+    category: 'library',
+    tagline: 'Multi-Provider Storage Abstraction',
+    description:
+      'Unified storage API for multiple cloud providers. Upload and download files to Amazon S3, Google Cloud Storage, Google Drive, or GitHub Releases with the same interface.',
+    color: 'purple',
+    githubUrl: 'https://github.com/plexusone/omnistorage',
+    docsUrl: 'https://plexusone.dev/omnistorage/',
+    features: [
+      'Amazon S3 storage via omni-aws provider',
+      'Google Cloud Storage via omni-google provider',
+      'Google Drive via omni-google provider',
+      'GitHub Releases via omni-github provider',
+      'Unified upload/download API across all providers',
+      'Extensible architecture for custom providers',
+    ],
+    useCases: [
+      'Store files across multiple cloud providers with one API',
+      'Use S3 for production, local filesystem for development',
+      'Distribute releases via GitHub Releases',
+      'Back up files to Google Cloud Storage or Drive',
+      'Build apps that work with any storage backend',
+    ],
+  },
+  {
     name: 'ElevenLabs Go',
     slug: 'elevenlabs-go',
     category: 'library',
