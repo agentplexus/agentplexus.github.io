@@ -18,7 +18,9 @@
         { "description": "Coordinate Picker tool with image upload, multi-shape support, and SVG export at /tools/coordinate-picker/", "commit": "11eec00" },
         { "description": "OmniChat product for unified chat interfaces", "commit": "be9b5d9" },
         { "description": "AgentComms product for agent communication protocols", "commit": "be9b5d9" },
-        { "description": "OmniStorage library for multi-provider storage (S3, GCS, Google Drive, GitHub Releases)" },
+        { "description": "OmniStorage library for multi-provider storage (S3, GCS, Google Drive, GitHub Releases)", "commit": "53b190c" },
+        { "description": "Storage category on Integrations page with S3, GCS, Google Drive, and GitHub Releases providers", "commit": "0a01d75" },
+        { "description": "GitHub and Google Drive SVG icons for integrations", "commit": "0a01d75" },
         { "description": "ElevenLabs Go SDK for text-to-speech integration", "commit": "be9b5d9" },
         { "description": "Opik Go SDK for LLM observability", "commit": "be9b5d9" },
         { "description": "SHAP Go library for ML model interpretability", "commit": "be9b5d9" }
